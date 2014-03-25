@@ -221,13 +221,35 @@ ol.bjqs-markers li.active-marker a,
 ol.bjqs-markers li a:hover{
 	background: #999;
 }
-
+.bjqs ul img{
+	width: 100%;
+}
 p.bjqs-caption{
 	background: rgba(255,255,255,0.5);
 }
 
 /***/
-
+@media only screen and (min-width: 320px) and (max-width:649px)  {
+/* Styles */
+	.container{
+		margin: 0 auto;
+		width: 90%;
+	}
+	figure[role="logo"]{
+		width: 115px;
+		height: 150px;
+	}
+	header{
+		height: 120px;
+	}
+	nav[role="first_menu"] li{
+		padding: 0;
+		margin:  0;
+	}
+	nav[role="first_menu"] li a{
+		font-size: 1.1em;
+	}
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 650px) and (max-width: 1024px)  {
 /* Styles */
