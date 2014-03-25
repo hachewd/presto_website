@@ -1,0 +1,70 @@
+.titseccion{
+	color:#c80000;
+	font-family: BebasNeus;
+	font-size: 57px;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+.cols{
+	border-right: 1px solid #c80000;
+	color: #4d4d4d;
+	display: inline-block;
+	font-family: Roboto-light;
+	font-size: 15px;
+	margin-bottom: 50px;
+	min-height: 350px;
+	overflow: hidden;
+	padding: 15px 2% 0 2%;
+	width: 28%;
+	vertical-align: top;
+}
+.cols:last-child{
+	border:0;
+}
+.cols h2{
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 25px;
+}
+.cols input{
+	margin-bottom: 15px;
+}
+.cols input[type="submit"]{
+	background: #ff0000;
+	border:0;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	font-family: Roboto;
+	font-size: 14px;
+	margin-top: 15%;
+	padding: 8px 10px;
+	text-transform: uppercase;
+}
+.note{
+	font-size: 12px;
+	font-weight: normal;
+}
+.addnew{
+	color: #ff0000;
+	display: block;
+	float: right;
+	font-weight: bold;
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 650px) and (max-width: 1024px)  {
+/* Styles */
+	
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+/* Styles */
+	
+}
+@media only screen and (min-width: 1281px) {
+	
+}

@@ -18,6 +18,7 @@
   js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+	<section id=""></section>
 	<header>
 		<section class="container top">
 			<figure role="logo"><img src="images/presto_logo.png"/></figure>
@@ -45,7 +46,24 @@
 			</ul>
 		</section>
 	</nav>
-	<section role="contenido">
+	<section id="contenido" role="contenido">
+		<section class="screenblack"></section>
+		<section class="screenwhite">
+	      	<section id="login">
+				Servicio de domicilio en línea<br/>
+12:00 am - 9:00 pm<br/>
+VALOR MINIMO PEDIDO <br/>
+$10.000
+<aside>
+	<h4>inicia sesi&oacute;n</h4>
+	
+		<form>
+			<input type="text" maxcharter="5" placeholder="Email registrado"/><br/>
+			<input type="text" maxcharter="5" placeholder="Contrase&ntilde;a"//>
+		</form>
+</aside>
+	      	</section>
+      	</section>
 		<section class="container">
 			<section role="productos">
 				<section class="pedido">
@@ -93,6 +111,18 @@
           });
           
         });
+      </script>
+     
+     
+      <script type="text/javascript">
+      	$('.pedido a').click(function(){
+
+      		console.log('llego click');
+      		$('.screenblack').css('');
+      		$('.screenblack').animate{
+      			opacity: 0.5,
+      		}
+      	});
       </script>
 </body>
 </html>
