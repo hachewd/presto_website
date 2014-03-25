@@ -54,6 +54,46 @@
 	float: right;
 	font-weight: bold;
 }
+.center{
+	font-family: Roboto;
+	font-size: 15px;
+	line-height: 22px;
+	text-align: center;
+	padding: 18px 25px;
+}
+.login h4{
+	color:#666666;
+	font-family: BebasNeus;
+	font-size: 45px;
+	padding-bottom: 15px;
+}
+.login input[type="text"]{
+	padding: 4px 5px;
+	margin: 5;
+	width: 50%;
+}
+.login a{
+	color:#ff0000;
+	font-size: 12px;
+	text-decoration: none;
+}
+.login a:hover{
+	color:#666;
+}
+.login input[type="submit"]{
+	background: #ff0000;
+	border:0;
+	color:#fff;
+	cursor: pointer;
+	font-size: 15px;
+	padding: 8px 20px;
+}
+.login input[type="submit"]:hover{
+	background: #666;
+}
+.destacar{
+	color: #ff0000;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 650px) and (max-width: 1024px)  {
 /* Styles */

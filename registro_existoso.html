@@ -20,6 +20,14 @@
   js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+	<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=466572120136816";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
 	<header>
 		<section class="container top">
 			<figure role="logo"><a href="index.html"><img src="images/presto_logo.png"/></a></figure>
@@ -48,7 +56,7 @@
 		</section>
 	</nav>
 	<section id="contenido" role="contenido">
-	   	<section id="login" class="screen">
+	      	<section id="login" class="screen">
 	     		<p class="center">
 				<strong class="destacar">Servicio de domicilio en l&iacute;nea<br/>
 				12:00 am - 9:00 pm<br/></strong>
@@ -57,7 +65,6 @@
 
 				<aside class="login center">
 					<h4>inicia sesi&oacute;n</h4>
-					
 						<form>
 							<input type="text" maxcharter="5" placeholder="Email registrado"/><br/>
 							<input type="text" maxcharter="5" placeholder="Contrase&ntilde;a"/><br/>
@@ -65,29 +72,38 @@
 							<br/>
 							<input type="submit" value="Inicia sesi&oacute;n"/>
 						</form>
-						
 				</aside>
-				
-					
 					<p class="center">&#191;No tienes cuenta en Presto? <br/>
 					<a href="registro.html" class="destacar"><strong>Reg&iacute;strate aqu&iacute;</strong></a><br/>
 					<a href="#" class="destacar note">Beneficios de estar registrado</a>
 				</p>
 	      	</section>
+ 
 		<section class="container">
-			<section role="productos">
-				<section class="ingresar">
-					<a href="#" class="pedido">Pide en l&iacute;nea</a>
-				</section>
-				<div id="banner-slide">
-			        <!-- start Basic Jquery Slider -->
-			        <ul class="bjqs">
-			          <li><img src="images/productos/mega_queso_tocineta.png"></li>
-			          <li><img src="images/productos/mega_queso_tocineta.png"></li>
-			          <li><img src="images/productos/mega_queso_tocineta.png"></li>
-			        </ul>
-			        <!-- end Basic jQuery Slider -->
-		    	</div>
+			<h1 class="titseccion">Reg&iacute;strate</h1>
+			<section role="registro">
+				<fieldset>
+					<p> E-mail registrado<br/>
+					silviacatalina23@gmail.com</p>
+
+					<p>Tel&eacute;fono <br/>
+					6714390</p>
+
+					<p>Celular<br/>
+					3125095387</p>
+
+					<p>Direcci&oacute;n Principal <br/>
+					Carrera 13b # 163 - 5O <br/>
+					Aptartamento 301 - torre 8</p>
+
+					<p>Ciudad<br/>
+					Bogot&aacute;</p>
+				</fieldset>
+				<article>
+					<h3>Silvia catalina pe&ntilde;a</h3>
+					<p>Tus datos han sido ingresados exitosamente en el sistema.<br/>
+						&#33;Gracias!</p>
+				</article>
 			</section>
 		</section>
 	</section>
@@ -108,7 +124,8 @@
 		</aside>
 		</section>
 	</footer>
-	<script class="secret-source">
+
+     <script class="secret-source">
         jQuery(document).ready(function($) {
           
           $('#banner-slide').bjqs({
@@ -147,11 +164,9 @@
       			$('.window').css('visibility', 'hidden');
       		});     		
       	});
-
         });
 
-
+       
       </script>
-   
 </body>
 </html>
