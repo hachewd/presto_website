@@ -4,8 +4,10 @@
 <title>Presto</title>
 <link rel="stylesheet" type="text/css" href="css/skin.css">
 <link rel="stylesheet" href="css/style.css"></head>
+<link rel="stylesheet" href="css/bjqs.css">
 <script type="text/javascript" src="js/modernizr.custom.10366.js"></script>
 <script src="js/jquery.min.js"></script>
+<script src="js/bjqs-1.3.min.js"></script>
 </head>
 <body>
 	<div id="fb-root"></div>
@@ -45,7 +47,20 @@
 	</nav>
 	<section role="contenido">
 		<section class="container">
-			Contenido
+			<section role="productos">
+				<section class="pedido">
+					<a href="#">Pide en l&iacute;nea</a>
+				</section>
+				<div id="banner-slide">
+			        <!-- start Basic Jquery Slider -->
+			        <ul class="bjqs">
+			          <li><img src="images/productos/mega_queso_tocineta.png"></li>
+			          <li><img src="images/productos/mega_queso_tocineta.png"></li>
+			          <li><img src="images/productos/mega_queso_tocineta.png"></li>
+			        </ul>
+			        <!-- end Basic jQuery Slider -->
+		    	</div>
+			</section>
 		</section>
 	</section>
 	<footer>
@@ -60,10 +75,24 @@
 			</ul>
 		</nav>
 		<aside role="socialmedia">
-			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+			<div class="fb-like" data-href="http://clientes.hachedesign.com/presto/" data-width="100" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
 			<a href="#" class="icon-facebook"></a>
 		</aside>
 		</section>
 	</footer>
+	<script class="secret-source">
+        jQuery(document).ready(function($) {
+          
+          $('#banner-slide').bjqs({
+            animtype      : 'slide',
+            height        : 486,
+            width         : 1280,
+            responsive    : true,
+            showmarkers : false,
+            randomstart   : true
+          });
+          
+        });
+      </script>
 </body>
 </html>

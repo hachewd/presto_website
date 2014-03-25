@@ -13,7 +13,7 @@ header{
 }
 .signup{
 	background: #fff;
-	font-family: Roboto-Bold;
+	font-family: Roboto;
 	font-weight: bold;
 	padding: 10px;
 	position: absolute;
@@ -137,8 +137,69 @@ aside[role="socialmedia"] div, aside[role="socialmedia"] a{
 }
 /*contenido*/
 section[role="contenido"]{
-	background: url(../images/gradient_container.jpg) repeat-x;
+	background: url(../images/gradient_container.jpg) repeat-x 0 bottom;
+	padding: 30px 0;
 }
+section[role="productos"]{
+	position: relative;
+}
+/*pedido*/
+.pedido{
+	position: absolute;
+	right: 55px;
+	top: 10px;
+	z-index:25;
+}
+.pedido a{
+	background: #ffb500;
+	color:#1c110b;
+	font-family: BebasNeus;
+	font-size: 1.6em;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+}
+/*rotabanner*/
+#banner-fade,
+#banner-slide{
+	margin-bottom: 60px;
+}
+
+ul.bjqs-controls.v-centered li a{
+	display:block;
+	padding:10px;
+	background:#1b100a;
+	color:#000;
+	text-decoration: none;
+	overflow: hidden;
+	text-indent: -100px;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+	background:#c80000;
+	color:#fff;
+}
+
+ol.bjqs-markers li a{
+	padding:5px 10px;
+	background:#000;
+	color:#fff;
+	margin:5px;
+	text-decoration: none;
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+	background: #999;
+}
+
+p.bjqs-caption{
+	background: rgba(255,255,255,0.5);
+}
+
+/***/
+
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 650px) and (max-width: 1024px)  {
 /* Styles */
@@ -205,6 +266,10 @@ section[role="contenido"]{
 	.container{
 		margin: 0 auto;
 		width: 70%;
+	}
+	section[role="productos"]{
+		width: 98%;
+		margin: 0 auto;
 	}
 	header{
 		height: 100px;
