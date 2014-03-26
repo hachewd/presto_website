@@ -94,17 +94,98 @@
 .destacar{
 	color: #ff0000;
 }
+section[role="registro"] fieldset, section[role="registro"]  article{
+	color: #333;
+	display: inline-block;
+	height: 350px;
+	font-family: Roboto;
+	overflow: hidden;
+	vertical-align: top;
+}
+.botones{
+	background: #ff0000;
+	color:#fff;
+	display: block;
+	font-family: Roboto;
+	font-size: 14px;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	width: 100px;
+	transition: all 0.5s;
+}
+.floatright{
+	float: right;
+}
+.floatleft{
+	float: left;
+}
+.ccenter{
+	margin: 0 auto 0 auto;
+}
+.botones:hover{
+	background: #666;
+}
+section[role="registro"] fieldset{
+	border:#ff0000 solid 1px;
+	font-size: 14px;
+	line-height: 22px;
+	padding: 20px 15px 20px 40px;
+	width: 25%;
+}
+section[role="registro"] article{
+	font-size: 16px;
+	padding: 20px 15px 20px 40px;
+	text-align: center;
+	width: 40%;
+}
+section[role="registro"] article h3{
+	color:#ff0000;
+	font-family: BebasNeus;
+	font-size: 57px;
+	margin: 80px 0 15px 0;
+}
+section[role="registro"] article strong{
+	font-size: 21px;
+	font-weight: normal;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 650px) and (max-width: 1024px)  {
 /* Styles */
-	
+	section[role="registro"] fieldset{
+		width: 35%;
+	}
+	section[role="registro"] article{
+		width: 45%;
+		margin-left: 5%;
+	}
+	.ccenter{
+		margin: 7% auto 0 auto;
+	}
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
 /* Styles */
-	
+	section[role="registro"] fieldset{
+		width: 30%;
+	}
+	section[role="registro"] article{
+		width: 50%;
+		margin-left: 5%;
+	}
+	.ccenter{
+		margin: 24% auto 0 auto;
+	}
 }
 @media only screen and (min-width: 1281px) {
-	
+	section[role="registro"] fieldset{
+		margin-left: 8%;
+	}
+	section[role="registro"]  article{
+		margin-left: 5%;
+	}
+	.ccenter{
+		margin: 22% auto 0 auto;
+	}
 }
