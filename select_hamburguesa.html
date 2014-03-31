@@ -11,6 +11,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
 <script src="//use.edgefonts.net/bebas-neue:n4:all.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.10366.js"></script>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bjqs-1.3.min.js"></script>
 	<!-- Add fancyBox main JS and CSS files -->
@@ -97,11 +98,13 @@
 								<input type="text" maxcharter="5" placeholder="Email registrado"/><br/>
 								<input type="password" maxcharter="5" placeholder="Contrase&ntilde;a"/><br/>
 								<a href="#">Olvide mi contrase&ntilde;a</a><br/>
+							
 								<!--<input type="submit" value="Inicia sesi&oacute;n"/>-->
 								<a href="#address" class="fancybox submit">Inicia sesi&oacute;n</a>
 							</form>
 							<a href=""><img src="images/conectar_facebook.jpg"/></a>
 					</aside>
+						
 						<p class="center">
 						&#191;No tienes cuenta en Presto? <br/>
 						<a href="registro.html" class="destacar"><strong>Reg&iacute;strate aqu&iacute;</strong></a><br/>
@@ -119,68 +122,73 @@
 		      	</section>
 	      </section>
 		<section class="container">
-			<!-- End header section -->
-			<h1 class="titseccion">Reg&iacute;strate</h1>
-			<section role="registro">
-				<form action="registro_existoso.html" method="post">
-					<section class="cols">
-						<h2>Informaci&oacute;n Personal</h2>
-						<label><strong>*</strong>Nombre:</label><br/>
-						<INPUT type="text" name="name" id="name" size="35"><br/>
-						<label><strong>*</strong>Apellido:</label><br/>
-						<INPUT type="text" name="lastname" id="lastname"  size="35"><br/>
-						<label><strong>*</strong>Tel&eacute;fono:</label><br/>
-						<INPUT type="text" name="phone" id="phone"  size="35"><br/>
-						<label><strong>*</strong>Celular:</label><br/>
-						<INPUT type="text" name="movil" id="movil"  size="35"><br/>
-						<label><strong>*</strong>Correo Electr&oacute;nico:</label><br/>
-						<INPUT type="text" name="email" id="email"  size="35"><br/>
-						<label><strong>*</strong>Cumplea&ntilde;os:</label><br/>
-						<select type="text" name="month" id="month">
-							<option>01</option>
-							<option>02</option>
-						</select>
-						<select type="text" name="year" id="year">
-							<option>1990</option>
-							<option>1991</option>
-							<option>1992</option>
-							<option>1993</option>
-						</select>
+			<!-- end header section -->
+			<section role="productos">
+				<section class="ingresar">
+					<aside class="usuario">Silvia Catalina <aside class="estado activo"></aside></aside>
+				</section>
+				<section class="selec_producto">
+					<section class="colum">
+						<nav class="categories">
+							<ul>
+								<li><a href="">Hamburguesas</a></li>
+								<li><a href="">Fundidos</a></li>
+								<li><a href="">Ensaladas</a></li>
+								<li><a href="">Otros</a></li>
+								<li><a href="">Acompa&ntilde;amientos</a></li>
+								<li><a href="">Men&uacute; Infantil</a></li>
+								<li><a href="">Postres</a></li>
+								<li><a href="">Bebidas</a></li>
+							</ul>
+						</nav></section>
+					<section class="colum producto">
+						<aside class="produc_selec"><h4>HAMBURGUESA <strong>QUESO TOCINETA</strong></h4>
+Escoje el tama&ntilde;o de tu hamburguesa y si la prefieres en combo</aside>
+						<figure>
+							<img src="images/productos/mega_queso_tocineta.png"/>
+						</figure>
+						<fieldset class="estilo">
+							<label>SUPER $12.000</label><input type="radio" name="estilo" value="super" checked/>
+							<label>MEGA $16.000</label><input type="radio" name="estilo" value="mega"/>
+							<label>COMBO Papa super + gaseosa 10 Oz +$5.400</label><input type="checkbox" name="combo" value="combo"/>
+
+						</fieldset>
+						<a href="#" class="botones" id="addprod">Agregar Producto</a>
 					</section>
-					<section class="cols">
-						<h2>Ubicaci&oacute;n</h2>
-						<label><strong>*</strong>Direcci&oacute;n:</label><br/>
-						<select type="text" name="state" id="state">
-							<option>Estado</option>
-						</select>
-						<INPUT type="text" name="address1" id="address1" maxlength="10" size="5"> #
-						<INPUT type="text" name="address2" id="address2" size="5"> - 
-						<INPUT type="text" name="address3" id="address4" size="5"><br/>
-						<label><strong>*</strong>Casa, oficina, Apartamento, Torre, etc:</label><br/>
-						<INPUT type="text" name="address4" id="address4"  size="35"><br/>
-						<label><strong>*</strong>Barrio:</label><br/>
-						<INPUT type="text" name="neighborhood" id="neighborhood" size="35"><br/>
-						<label><strong>*</strong>Ciudad:</label><br/>
-						<select type="text" name="city" id="city">
-							<option>Estado</option>
-						</select><br/>
-						<a href="" class="addnew">Agregar otra direcci&oacute;n</a>
+					<section class="colum cart_detail" style="display: none; opacity: 0;">
+						<div class="cartSummary">
+							<article>
+							<header>
+								<input type="number" name="quantity" min="1" max="5" value="1">
+    							<aside class="prod_select"> Hamburguesa <br/>Mega QUESO TOCINETA</aside>
+    							<aside class="total">$16.000</aside>
+    							<a href="#" class="borrar">borrar</a>
+							</header>
+							<aside class="detail">
+								<div><aside class="ingredientes_select">- Cebolla</aside><aside class="valor"></aside><a href="#" class="borrar">borrar</a></div>
+								<div><aside class="ingredientes_select">+ Champi&ntilde;ones</aside><aside class="valor">$ 2.500</aside><a href="#" class="borrar">borrar</a></div>
+								<div><aside class="ingredientes_select">Malteada Chocolate</aside><aside class="valor">$ 7.100</aside><a href="#" class="borrar">borrar</a></div>
+								<div><aside class="ingredientes_select">Papa Mega</aside><aside class="valor">$ 5.900</aside><a href="#" class="borrar">borrar</a></div>
+								<div><aside class="ingredientes_select">Pie de manzana</aside><aside class="valor">$ 6.100</aside><a href="#" class="borrar">borrar</a></div>
+							</aside>
+							<aside class="personalizar"><a href="personalizar_hamburguesa.html" class="botones">Personalizar</a>Pedido Camilo</aside>
+						</article>
+
+						<a href="" class="botones">Observaciones</a><a href="personalizar_hamburguesa.html" class="botones">Personalizar</a>
+						<section class="totales">
+							Sub Total $18.500<br/>
+							Recargo domicilio $ 3.300<br/>
+							Total $21.800
+						</section>
+						<a href="" class="botones">Agregar otro producto</a><a href="" class="botones">Comprar</a><br/>
+					</div>
+						NUESTROS PRECIOS INCLUYEN IMPUESTOS
 					</section>
-					<section class="cols">
-						<h2>Informaci&oacute;n de Registro</h2>
-						<label><strong>*</strong>Usuario:</label><br/>
-						<INPUT type="text" name="user" id="user" size="35"><br/>
-						<label><strong>*</strong>Contrase&ntilde;a:</label><br/>
-						<INPUT type="password" name="pass" id="pass" size="35"><br/>
-						<label><strong>*</strong>Confirmar contrase&ntilde;a:</label><br/>
-						<INPUT type="text" name="repassword" id="repassword" size="35"><br/>
-						<input type="checkbox" name="newsletter" id="newsletter" value="si"> <strong class="note">Recibir en mi correo invitaciones y ofertas de Presto</strong><br/>
-						<input type="submit" value="Registrar" name="registrar" id="registrar">
-					</section>
-				</form>
+					
+				</section>
 			</section>
-			 <!-- start footer section -->
-		</section>
+
+		<!-- start footer section -->
 	</section>
 	<footer>
 		<section class="container">
@@ -199,7 +207,9 @@
 		</aside>
 		</section>
 	</footer>
-		<script src="js/hwd-1.1.js"> </script>
+		<script src="js/hwd-1.1.js">
+
+		</script>
    <!-- end footer section -->
 </body>
 </html>
