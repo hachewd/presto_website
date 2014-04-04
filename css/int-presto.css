@@ -374,6 +374,56 @@ section[role="registro"] article strong{
 	font-weight: normal;
 }
 
+/*menu productos*/
+.menuproductos{
+	width: 60%;
+}
+.menu{
+	text-align: center;
+}
+.menu ul{
+	list-style: none;
+}
+.menu li{
+	display: inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.menu li a{
+	display: block;
+	color: #2c1b03;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	transition: all 0.5s ease-out;
+}
+.menu li a:hover{
+	color:#ea0000;
+}
+.show_detail{
+    min-height: 300px;
+    position: relative;
+    width: 100%;
+}
+.show_detail article{
+    position: absolute;
+}
+.show_detail article figure img{
+	width: 100%;
+}
+.show_detail article figure, .show_detail article aside{
+	display: inline-block;
+	vertical-align: top;
+}
+.show_detail article h2{
+    color: #ff0000;
+    font-family: bebas-neue, sans-serif;
+    font-size:20px;
+    text-transform: uppercase;
+}
+.show_detail article aside p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 650px) and (max-width: 1024px)  {
 /* Styles */
