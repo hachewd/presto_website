@@ -395,19 +395,28 @@ section[role="registro"] article strong{
 	font-size: 12px;
 	text-decoration: none;
 	transition: all 0.5s ease-out;
+	-webkit-filter: grayscale(50%);
 }
 .menu li a:hover{
 	color:#ea0000;
+	-webkit-filter: grayscale(0%);
+}
+.menu h4{
+	color: #ff0000;
+    font-family: bebas-neue, sans-serif;
+    font-size:25px;
+    font-weight: normal;
+    text-align: left;
 }
 .show_detail{
-    min-height: 300px;
+    min-height: 280px;
     position: relative;
     width: 100%;
 }
 .show_detail article{
     position: absolute;
 }
-.show_detail article figure img{
+.show_detail article figure a img{
 	width: 100%;
 }
 .show_detail article figure, .show_detail article aside{
@@ -417,13 +426,25 @@ section[role="registro"] article strong{
 .show_detail article h2{
     color: #ff0000;
     font-family: bebas-neue, sans-serif;
-    font-size:20px;
+    font-size:50px;
+    font-weight: normal;
     text-transform: uppercase;
 }
 .show_detail article aside p{
     font-family: 'Roboto Condensed', sans-serif;
 }
+.active{
+	opacity: 1;
+	visibility: visible;
+	z-index: 30;
+}
+.inactive{
+	opacity: 0;
+	visibility: hidden;
+	z-index: 15;
+}
 
+/**/
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 650px) and (max-width: 1024px)  {
 /* Styles */
@@ -448,6 +469,9 @@ section[role="registro"] article strong{
 	.selec_producto .categories{
 		margin-left:25px;
 		margin-right: 30px;
+	}
+	.show_detail{
+   	 min-height: 400px;
 	}
 }
 
@@ -476,6 +500,9 @@ section[role="registro"] article strong{
 		margin-left:25px;
 		margin-right: 30px;
 	}
+	.show_detail{
+   	 min-height: 280px;
+	}
 }
 @media only screen and (min-width: 1281px) {
 	section[role="registro"] fieldset{
@@ -501,5 +528,8 @@ section[role="registro"] article strong{
 	.selec_producto .categories{
 		margin-left:40px;
 		margin-right: 30px;
+	}
+	.show_detail{
+   	 min-height: 280px;
 	}
 }
