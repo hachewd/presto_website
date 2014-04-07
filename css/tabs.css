@@ -5,49 +5,61 @@
  */
 .tabs > DIV {
 	/*border-top: 1px solid #c7c7c7*/
-	margin-top: 10px;
-	background: #F17C71 !important;
+	margin-top: 0px;
+	background: #fff !important;
 	/*border-bottom: 4px solid #E95855 !important;*/
-}
 
+}
+.horizontal li{
+	display: inline-block;
+	
+}
 .tabs > DIV H3 {
-	border-bottom: 4px solid #E5E5E5 !important;
+	border-bottom: 0px solid #E5E5E5 !important;
 	color: #ccc !important;
 	font-weight: 300;
 	line-height: 186px !important;
 }
-
-.tabs LI {
-	background: white;
-	border-bottom: 4px solid #E5E5E5;
-	margin-right: 10px;
+.tabs{
+	border: 1px solid #2c1b03;
+	font-family: 'Roboto Condensed', sans-serif;
 }
-
+.tabs ul{
+	margin:0;
+	padding: 0;
+}
+.tabs LI {
+	background: #ff0000;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 24.5%;
+}
 .tabs A {
-	color: #ccc;
+	color: #fff;
 	display: block;
 	font-size: 18px;
-	font-weight: 300;
-	padding: 14px 24px;
+	padding: 7px 24px;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .tabs LI:hover {
-	background: #a0cac0;
-	border-bottom: 4px solid #68a697;
+	color: #2c1b03;
+	background: #ffbd00;
 }
 
 .tabs LI:hover A {
-	color: white;
+	color: #2c1b03;
 }
 
 .active {
-	background: #a0cac0 !important;
-	border-bottom: 4px solid #68a697 !important;
+	color: #2c1b03;
+	background: #ffbd00 !important;
 }
 
 .active A {
-	color: white !important;
+	color: #2c1b03 !important;
 }
 
 .button {
@@ -63,7 +75,7 @@
 	padding: 15px 20px;
 	text-align: center;
 	text-transform: uppercase;
-	width: 150px;
+	/*width: 150px;*/
 	-webkit-transition: all 0.2s ease-out;
 	-moz-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
@@ -130,9 +142,10 @@ UL.horizontal { /* Horizontal lists */
 
 UL.horizontal > LI {
 	display: inline-block;
-
+	margin: 0;
+	padding: 0;
 	/* IE */
-	*margin: 1px;
+	*margin: 0px;
 	zoom: 1;
 	*display: inline;
 }

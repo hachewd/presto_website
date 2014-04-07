@@ -244,14 +244,16 @@ h3.subtitle strong{
 	background: url(../images/carrito_ico.png) no-repeat -60px 0px;
 }
 .producto{
-	width:50%;
+	width:58%;
 	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 50px;
 }
 .cart_detail{
 	position: absolute;
 	right: 0px;
 	top: 50px;
-	width: 30%;
+	width: 25%;
 	z-index: 12;
 }
 
@@ -376,7 +378,11 @@ section[role="registro"] article strong{
 
 /*menu productos*/
 .menuproductos{
-	width: 60%;
+	width: 65%;
+}
+.slid_prod{
+	margin-bottom: 50px;
+	width: 100%;
 }
 .menu{
 	text-align: center;
@@ -416,13 +422,13 @@ section[role="registro"] article strong{
 .show_detail article{
     position: absolute;
 }
-.show_detail article figure a img{
-	width: 100%;
-}
+
+
 .show_detail article figure, .show_detail article aside{
 	display: inline-block;
 	vertical-align: top;
 }
+
 .show_detail article h2{
     color: #ff0000;
     font-family: bebas-neue, sans-serif;
@@ -432,6 +438,7 @@ section[role="registro"] article strong{
 }
 .show_detail article aside p{
     font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
 }
 .active{
 	opacity: 1;
@@ -443,8 +450,130 @@ section[role="registro"] article strong{
 	visibility: hidden;
 	z-index: 15;
 }
-
+.agregar{
+	bottom: 10px;
+	right: 25px; 
+	position: absolute;
+}
 /**/
+
+/*producto seleccionado*/
+aside.produc_selec {
+	font-family: 'Roboto light', sans-serif;
+	font-size: 20px;
+	margin-bottom:  110px;
+}
+.produc_selec h4{
+	color: #57453e;
+	font-family: 'Roboto light', sans-serif;
+	font-size: 35px;
+	font-weight: normal;
+}
+.produc_selec h4 strong{
+	font-family: 'Roboto black', sans-serif;
+	font-weight: bolder;
+}
+.producto figure, .producto fieldset{
+	display: inline-block;
+	vertical-align: top;
+}
+.producto fieldset{
+	border: 0px;
+	width: 35%;
+	text-align: center;
+}
+.producto fieldset label{
+	color:#57453e;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 21px;
+	text-transform: uppercase;
+}
+.producto fieldset label strong{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: lowercase;
+}
+.producto fieldset label mark{
+	color:#ff151f;
+	background: transparent;
+	font-weight: bold;
+}
+.producto fieldset div{
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 15px;
+	text-align: center;
+}
+.producto fieldset .middle{
+	border-right: 1px solid #9b9b9b;
+	width: 35%;
+}
+.producto fieldset .middle:nth-child(2){
+	border-right:0px;
+}
+.producto fieldset .complete{
+	border-top: 1px solid #9b9b9b;
+	width: 90%;
+}
+.producto fieldset input{
+	display: block;
+	margin: 0 auto;
+}
+
+
+/*personalizar menu tabs*/
+.personalizar{
+	width: 55%;
+}
+.cols-left, .cols-right{
+	display: inline-block;
+	vertical-align: top;
+}
+.tabs h5{
+	color:#ff0000;
+	font-weight: normal;
+	text-align: center;
+	margin: 12px 0 10px 0;
+}
+.col1ter{
+	width: 25%;
+	padding: 0 10px 10px 20px;
+}
+.col3ter{
+	width: 60%;
+	padding: 0 10px 10px 40px;
+}
+.cols3{
+	-webkit-column-count:3; /* Chrome, Safari, Opera */
+	-moz-column-count:3; /* Firefox */
+	column-count:3;
+}
+.tabs label{
+	display: inline-block;
+	font-family: 'Roboto light', sans-serif;
+	font-size: 12px;
+	vertical-align: top;
+	margin: 0 0 10px 4px;
+}
+.tabs input[type="checkbox"]{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2px;
+}
+.tabs .doblespacio{
+	margin: 0 0 20px 4px;
+}
+.contentabs{
+	padding: 10px;
+}
+.border-right{
+	border-right: 1px solid #2c1b03;
+}
+/**/
+
+
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 650px) and (max-width: 1024px)  {
 /* Styles */
@@ -471,7 +600,27 @@ section[role="registro"] article strong{
 		margin-right: 30px;
 	}
 	.show_detail{
-   	 min-height: 400px;
+   	 min-height: 460px;
+	}
+	.show_detail article aside{
+		display: block;
+		margin:0 auto;
+		width:80%;
+	}
+	.show_detail article figure{
+		display: block;
+		margin: 0 auto;
+		width: 60%;
+	}
+	.show_detail article figure img{
+		width: 100%;
+	}
+	.producto fieldset{
+		margin: 20px auto;
+		width: 90%;
+	}
+	aside.produc_selec {
+		margin-bottom:  50px;
 	}
 }
 
@@ -503,6 +652,20 @@ section[role="registro"] article strong{
 	.show_detail{
    	 min-height: 280px;
 	}
+	.show_detail article figure{
+		width: 50%;
+	}
+	.show_detail article aside{
+		width:40%;
+	}
+	.show_detail article figure img{
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+	}
+	aside.produc_selec {
+		margin-bottom:  110px;
+	}
 }
 @media only screen and (min-width: 1281px) {
 	section[role="registro"] fieldset{
@@ -532,4 +695,18 @@ section[role="registro"] article strong{
 	.show_detail{
    	 min-height: 280px;
 	}
+	.show_detail article figure{
+		width: 50%;
+	}
+	.show_detail article aside{
+		width:40%;
+	}
+	.show_detail article figure img{
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+	}
+	aside.produc_selec {
+	margin-bottom:  110px;
+}
 }
