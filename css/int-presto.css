@@ -120,7 +120,29 @@
 .personalizar{
 	width: 55%;
 }
-
+/*donde quiere el pedido*/
+#address h5{
+	color: #57453e;
+	font-size: 32px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+#address p.center{
+	color: #2c1b03;
+}
+#address fieldset{
+	border:0;
+}
+#address fieldset label{
+	color: #2c1b03;
+	display: inline-block;
+	font-family: 'Roboto light', sans-serif;
+	font-size: 15px;
+	margin: 10px 0 10px 10px;
+}
+#address a.addnew {
+	float:none;
+}
 /*pedido*/
 .colum{
 	display: inline-block;
@@ -458,11 +480,11 @@ section[role="registro"] article strong{
 	font-size: 12px;
 	text-decoration: none;
 	transition: all 0.5s ease-out;
-	-webkit-filter: grayscale(50%);
+	/*-webkit-filter: grayscale(50%);*/
 }
 .menu li a:hover{
 	color:#ea0000;
-	-webkit-filter: grayscale(0%);
+	/*-webkit-filter: grayscale(0%);*/
 }
 .menu h4{
 	color: #ff0000;
