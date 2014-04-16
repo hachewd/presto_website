@@ -1,221 +1,24 @@
-.titseccion{
-	color:#c80000;
-	font-family: bebas-neue, sans-serif;
-	font-size: 57px;
-	padding: 20px 0;
-	text-align: center;
-	width: 100%;
-}
-.cols{
-	color: #4d4d4d;
-	display: inline-block;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 15px;
-	overflow: hidden;
-	vertical-align: top;
-}
-.cols h2{
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-}
-.cols fieldset{
-	display: block;
-	border: 0;
-}
-.cols:last-child fieldset{
-	border: 0;
-}
-.cols input{
-	margin-bottom: 15px;
-}
-.cols input[type="submit"]{
-	background: #ff0000;
-	border:0;
-	border-radius: 3px;
-	color: #fff;
-	cursor: pointer;
-	float: right;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 14px;
-	margin-top: 15%;
-	padding: 8px 10px;
-	text-transform: uppercase;
-}
-.note{
-	font-size: 12px;
-	font-weight: normal;
-}
-.addnew{
-	color: #ff0000;
-	display: block;
-	float: right;
-	font-weight: bold;
-}
-.center{
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 15px;
-	line-height: 22px;
-	text-align: center;
-	padding: 5px 25px 15px 25px;
-}
-.screen h4{
-	color:#666666;
-	font-family: bebas-neue, sans-serif;
-	font-size: 45px;
-	font-weight: normal;
-	padding-bottom: 15px;
-	padding-top: 10px;
-}
-.screen h5{
-	color:#666666;
-	font-family: bebas-neue, sans-serif;
-	font-size: 30px;
-	font-weight: normal;
-	padding-bottom: 15px;
-	padding-top: 10px;
-	text-align: center;
-}
-.screen input[type="text"], .screen input[type="password"]{
-	padding: 4px 5px;
-	margin: 5;
-	width: 95%;
-}
-.screen a.link{
-	color:#ff0000;
-	font-size: 12px;
-	text-decoration: none;
-}
-.screen a.link:hover{
-	color:#666;
-}
-.screen input[type="submit"]{
-	background: #ff0000;
-	border:0;
-	color:#fff;
-	cursor: pointer;
-	display: block;
-	font-size: 15px;
-	margin: 15px 0 10px 0;
-	padding: 8px 20px;
-}
-.screen a.submit{
-	background: #ff0000;
-	border:0;
-	border-radius: 5px;
-	color:#fff;
-	display: inline-block;
-	font-size: 15px;
-	margin: 15px 0 10px 0;
-	padding: 8px 20px;
-}
-.login input[type="submit"]:hover{
-	background: #666;
-}
-.destacar{
-	color: #ff0000;
-}
-.personalizar{
-	width: 55%;
-}
-/*donde quiere el pedido*/
-#address h5{
-	color: #57453e;
-	font-size: 32px;
-	margin-top: 10px;
-	margin-bottom: 30px;
-}
-#address p.center{
-	color: #2c1b03;
-}
-#address fieldset{
-	border:0;
-}
-#address fieldset label{
-	color: #2c1b03;
-	display: inline-block;
-	font-family: 'Roboto light', sans-serif;
-	font-size: 15px;
-	margin: 10px 0 10px 10px;
-}
-#address a.addnew {
-	float:none;
+/*paginas internas submenu*/
+.selec_page{
+	position: relative;
 }
 
-/*ventana observaciones*/
-.vent_title{
-	font-family: 'Roboto light', sans-serif;
-	font-size: 33px;
-	font-weight: normal;
+.selec_page .categories li {
+	margin: 5px 0;
 }
-.screen textarea{
-	font-family: 'Roboto light', sans-serif;
-	font-size: 14px;
-	padding: 10px;
+.selec_page .categories li a{
+	background: #ffbd00;
+	color: #2c1b03;
+	font-size: 22px;
+	letter-spacing: -1px;
+	padding: 5px 10px;
+	width: 115px;
 }
-.screen input[type="submit"]{
-	margin: 10px auto;
-}
-/*pedido*/
-.colum{
-	display: inline-block;
-	vertical-align: top;
-}
-h2.subtitle, h3.subtitle, h4.subtitle{
-	color:#ff0000;
-	font-family: bebas-neue, sans-serif;
-	font-weight: normal;
-}
-h3.subtitle{
-	font-size: 62px;
-	line-height: 60px;
-}
-h3.subtitle strong{
-	font-size: 78px;
-	font-weight: normal;
-}
-.menucat{
-	margin-left: 30px;
-}
-.cupon{
-	background:#ff0000;
-	border-radius: 5px;
-	margin-top: 5px;
-	margin-bottom: 10px;
-	padding: 10px;
-}
-.cupon label, .cupon input[type="text"], .cupon a{
-	display: inline-block;
-	vertical-align: top;
-}
-.cupon label{
+.selec_page .categories li a:hover{
+	background: #ff0000;
 	color: #fff;
-	font-family: bebas-neue, sans-serif;
-	font-size: 30px;
-	margin: 1px 5px 0 0;
-	text-transform: uppercase;
 }
-.cupon input[type="text"]{
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	font-size: 16px;
-	padding: 6px 10px;
-}
-.cupon a{
-	color: #ff0000;
-	background: #fff;s
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	font-family: 'Roboto Condensed', sans-serif;
-	height: 27px;
-	margin-left: 5px;
-	padding-top: 5px ;
-	text-align: center;
-	text-decoration: none;
-	width: 32px;
-}
-
-.categories li{
+.selec_page li{
 	display: block;
 	font-family: bebas-neue, sans-serif;
 }
@@ -233,840 +36,154 @@ h3.subtitle strong{
 .categories li a:hover{
 	color:#ff0000;
 }
-.menucat{
-	text-align: center;
-}
-.links{
-	color:#ff0000;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 14px;
-}
-.links:hover{
-	color:#333;
-}
-.selec_producto{
-	padding-top: 50px;
-	position: relative;
-}
-
-.selec_producto .categories li {
-	margin: 5px 0;
-}
-.selec_producto .categories li a{
-	background: #ffbd00;
-	color: #2c1b03;
-	font-size: 22px;
-	letter-spacing: -1px;
-	padding: 5px 10px;
-	width: 115px;
-}
-.selec_producto .categories li a:hover{
-	background: #ff0000;
-	color: #fff;
-}
-.usuario{
-	display: inline-block;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 14px;
-	font-weight: bolder;
-}
-.estado{
-	background: url(../images/carrito_ico.png) no-repeat;
-	display: inline-block;
-	height: 32px;
-	overflow: hidden;
-	vertical-align: middle;
-	width: 50px;
-}
-.activo{
-	background: url(../images/carrito_ico.png) no-repeat -60px 0px;
-}
-.producto{
-	width:58%;
-	margin-right: 5%;
-	margin-left: 5%;
-	margin-bottom: 50px;
-}
-.cart_detail{
-	position: absolute;
-	right: 0px;
-	top: 50px;
-	width: 290px;
-	z-index: 12;
-}
-
-/**/
-
-/*columna detalle carrito*/
-.detail{
-	margin-bottom: 10px;
-}
-.cartSummary{
-	background: #fff;
-	border: 1px solid #2c1b03;
-}
-.cartSummary article{
-	font-family: 'Roboto Condensed', sans-serif;
-	margin: 10px;
-	padding: 10px
-}
-.cartSummary article header{
-	margin-bottom: 10px;
-}
-.cartSummary article:nth-child(even){
-	background: #fff;
-}
-.cartSummary article:nth-child(odd){
-	background: #f1eadb;
-}
-
-.cartSummary .borrar{
-	display: inline-block;
-	background: url(../images/borrar_btn.png) no-repeat;
-	height: 18px;
-	margin: 0 0 0 10px;
-	overflow: hidden;
-	text-indent: 50px;
-	vertical-align: bottom;
-	width: 12px;
-}
-.prod_select, .total, .cartSummary header input, .ingredientes_select, .cartSummary .valor{
+.colum_menu, .colum_content{
 	display: inline-block;
 	vertical-align: top;
 }
-.prod_select{
-	font-size: 14px;
-	margin: 0 5px 0 5px;
-	width: 50%;
-}
-.total{
-	font-size: 14px;
-	font-weight: bold;
-	margin: 15px 5px 0 5px;
-	width: 10%;
-}
-.cartSummary header input{
-	margin-top: 10px;
-	width:40px;
-}
-.ingredientes_select{
-	color: #57453e;
-	font-size: 12px;
-	margin-left: 50px;
-	width: 40%;
-}
-.cartSummary .valor{
-	font-size: 12px;
-	width: 18%;
-}
-.pedido_para{
-	color: #ff0000;
+
+
+/*conocenos*/
+.colum_content figure, .colum_content section.historia{
 	display: inline-block;
-	font-family: 'Roboto light', sans-serif;
-	font-size: 12px;
-	margin-left: 10px;
-	overflow: hidden;
-	width: 46%;
-	vertical-align: middle;
-}
-.btngrandes{
-	background: #ff0000;
-	border-radius: 5px;
-	color:#fff;
-	display: inline-block;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 16px;
-	margin: 7px 5px;
-	padding: 4px 10px;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.5s;
-	width: 39%;
-}
-.totales{
-	color: #ff0000;
-	border-top: 1px solid #ff0000;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 16px;
-	padding: 5px 10px;
-	text-align: right;
-}
-.totales mark{
-	color: #ff0000;
-	background: transparent;
-	display: inline-block;
-	width: 75px;
-}
-.textcafebold{
-	color: #57453e;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	text-align: center;
-}
-/*fin columna detalle carrito*/
-section[role="registro"] article.datos_usuario, section[role="registro"] article.nombreusuario{
-	border-radius: 5px;
-	color: #333;
-	display: inline-block;
-	height: 380px;
-	font-family: 'Roboto Condensed', sans-serif;
-	overflow: hidden;
 	vertical-align: top;
 }
-section[role="registro"]{
-	padding-bottom: 20px;
-}
-section[role="registro"] article.datos_usuario a, section[role="registro"]  article.nombreusuario a{
-	width: 120px;
-}
-.botones{
-	background: #ff0000;
-	border-radius: 5px;
-	color:#fff;
-	display: inline-block;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 14px;
-	margin: 7px 5px;
-	padding: 5px 10px;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.5s;
-}
-.btnagreg{
-	font-size: 12px;
-	padding: 7px 10px;
-	width: 39%;
-}
-.floatright{
-	float: right;
-}
-.floatleft{
-	float: left;
-}
-.ccenter{
-	margin: 0 auto 0 auto;
-}
-.botones:hover{
-	background: #666;
-}
-section[role="registro"] article.datos_usuario{
-	border:#ff0000 solid 1px;
-	font-size: 14px;
-	line-height: 22px;
-	padding: 20px 15px 20px 40px;
-	text-align: left;
-}
-section[role="registro"] article.nombreusuario{
-	font-size: 16px;
-	padding: 20px 15px 20px 10px;
-	text-align: center;
-	width: 40%;
-}
-section[role="registro"] article.nombreusuario h3{
-	color:#ff0000;
-	display: block;
-	font-family: bebas-neue, sans-serif;
-	font-weight: normal;
-	font-size: 57px;
-	margin: 80px 0 15px 0;
-	overflow: hidden;
-}
-section[role="registro"] article.nombreusuario strong{
-	font-family: "Roboto Light", sans-serif;
-	font-size: 22px;
-	font-weight: normal;
-}
-
-/*menu productos*/
-.menuproductos{
-	width: 65%;
-}
-.slid_prod{
-	margin-bottom: 50px;
+.colum_content figure img{
 	width: 100%;
 }
-.menu{
-	text-align: center;
-}
-.menu ul{
-	list-style: none;
-}
-.menu li{
-	display: inline-block;
-	font-family: 'Roboto Condensed', sans-serif;
-}
-.menu li a{
-	display: block;
-	color: #2c1b03;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 12px;
-	text-decoration: none;
-	transition: all 0.5s ease-out;
-	/*-webkit-filter: grayscale(50%);*/
-}
-.menu li a:hover{
-	color:#ea0000;
-	/*-webkit-filter: grayscale(0%);*/
-}
-.menu h4{
-	color: #ff0000;
-    font-family: bebas-neue, sans-serif;
-    font-size:25px;
-    font-weight: normal;
-    text-align: left;
-}
-.show_detail{
-    min-height: 280px;
-    position: relative;
-    width: 100%;
-}
-.show_detail article{
-    position: absolute;
-}
-
-
-.show_detail article figure, .show_detail article aside{
-	display: inline-block;
-	vertical-align: top;
-}
-
-.show_detail article h2{
-    color: #ff0000;
-    font-family: bebas-neue, sans-serif;
-    font-size:50px;
-    font-weight: normal;
-    text-transform: uppercase;
-}
-.show_detail article aside p{
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: justify;
-}
-.active{
-	opacity: 1;
-	visibility: visible;
-	z-index: 30;
-}
-.inactive{
-	opacity: 0;
-	visibility: hidden;
-	z-index: 15;
-}
-.agregar{
-	bottom: 10px;
-	right: 25px; 
-	position: absolute;
-}
-/**/
-
-/*producto seleccionado*/
-aside.produc_selec {
-	font-family: 'Roboto light', sans-serif;
-	font-size: 20px;
-	margin-bottom:  110px;
-}
-.produc_selec h4{
-	color: #57453e;
-	font-family: 'Roboto light', sans-serif;
-	font-size: 35px;
-	font-weight: normal;
-}
-.produc_selec h4 strong{
-	font-family: 'Roboto black', sans-serif;
-	font-weight: bolder;
-}
-.producto figure, .producto fieldset{
-	display: inline-block;
-	vertical-align: top;
-}
-.producto fieldset{
-	border: 0px;
-	width: 35%;
-	text-align: center;
-}
-.producto fieldset label{
-	color:#57453e;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 21px;
-	text-transform: uppercase;
-}
-.producto fieldset label strong{
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	text-transform: lowercase;
-}
-.producto fieldset label mark{
-	color:#ff151f;
-	background: transparent;
-	font-weight: bold;
-}
-.producto fieldset div{
-	display: inline-block;
-	vertical-align: top;
-	padding: 5px 15px;
-	text-align: center;
-}
-.producto fieldset .middle{
-	border-right: 1px solid #9b9b9b;
-	width: 35%;
-}
-.producto fieldset .middle:nth-child(2){
-	border-right:0px;
-}
-.producto fieldset .complete{
-	border-top: 1px solid #9b9b9b;
-	width: 90%;
-}
-.producto fieldset input{
-	display: block;
-	margin: 0 auto;
-}
-
-
-/*personalizar menu tabs*/
-.agregar_prod{
-	width: 55%;
-}
-.cols-left, .cols-right, .agregar_prod article header h2, div.pedidoparas{
-	display: inline-block;
-	vertical-align: top;
-}
-.tabs h5{
-	color:#ff0000;
-	font-weight: normal;
-	text-align: center;
-	margin: 12px 0 10px 0;
-}
-.col1ter{
-	width: 25%;
-	padding: 0 10px 10px 20px;
-}
-.col3ter{
-	width: 60%;
-	padding: 0 10px 10px 40px;
-}
-.cols3{
-	-webkit-column-count:3; /* Chrome, Safari, Opera */
-	-moz-column-count:3; /* Firefox */
-	column-count:3;
-}
-.tabs label{
-	display: inline-block;
-	font-family: 'Roboto light', sans-serif;
-	font-size: 12px;
-	vertical-align: top;
-	margin: 0 0 10px 4px;
-}
-.tabs input[type="checkbox"]{
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 2px;
-}
-.tabs .doblespacio{
-	margin: 0 0 20px 4px;
-}
-.contentabs{
-	padding: 10px;
-}
-.border-right{
-	border-right: 1px solid #2c1b03;
-}
-.agregar_prod header{
-	margin-bottom: 15px;
-	overflow: hidden;
-}
-.agregar_prod article header h2{
-	color: #57453e;
+.colum_content h2{
+	color: #534741;
 	font-family: bebas-neue, sans-serif;
+	font-size: 56px;
+	font-weight: normal;
+}
+.colum_content h3{
+	color: #534741;
+	font-family: bebas-neue, sans-serif;
+	font-size: 21px;
+	font-weight: normal;
+	margin: 10px 0px;
+}
+.colum_content p{
+	color: #534741;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 5px 0px 10px 0;
+	text-align: justify;
+}
+.align-right{
+	text-align: right;
+}
+.colum_content section.filosofia fieldset{
+	margin: 15px auto;
+	padding: 10px 40px;
+	width: 88%;
+}
+.colum_content section.filosofia legend{
+	display: block;
+}
+.colum_content section.filosofia p.destacado{
 	font-size: 38px;
-	font-weight: normal;
 }
-
-div.pedidopara{
-	color: #ff0000;
-	float: right;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-	margin-top: 8px;
+.colum_content section.filosofia p.txtgrande{
+	font-size: 47px;
 }
-div.pedidopara input{
-	border-radius: 5px;
-	border: 1px solid #2c1b03;
-	font-size: 15px;
-	margin-left: 10px;
-	padding: 4px 10px;
-}
-/**/
-
-/*completar pedido*/
-.detalle_carrito, .totales_pago{
-	display: inline-block;
-	vertical-align: top;
-}
-.detalle_carrito{
-	margin-right: 20px;
-	margin-bottom: 30px;
-	width: 35%;
-}
-.totales_pago{
-	width: 25%;
-}
-.detalle_carrito article{
-	font-family: 'Roboto Condensed', sans-serif;
-	margin: 10px;
-	padding: 10px
-}
-.detalle_carrito article header{
-	margin-bottom: 10px;
-}
-
-.detalle_carrito .borrar{
-	display: inline-block;
-	background: url(../images/borrar_btn.png) no-repeat;
-	height: 18px;
-	margin: 0 0 0 10px;
-	overflow: hidden;
-	text-indent: 50px;
-	vertical-align: bottom;
-	width: 12px;
-}
-.prod_c, .detalle_carrito header input, .detalle_carrito .ingredientes_select, .detalle_carrito .valor{
-	display: inline-block;
-	vertical-align: top;
-}
-.prod_c{
-	color: #2c1b03;
-	font-size: 20px;
-	margin: 0 5px 0 5px;
-	width: 65%;
-}
-
-.detalle_carrito .total{
-	color: #2c1b03;
-	display: inline-block;
-	font-size: 18px;
-	font-weight: bold;
-	margin: 0px 10px 0 5px;
-	text-align: right;
-	width: 20%;
-	vertical-align: bottom;
-}
-.detalle_carrito header input{
-	margin-top: 10px;
-	width:40px;
-}
-.detalle_carrito .ingredientes_select{
-	color: #57453e;
-	font-size: 16px;
-	margin-left: 5px;
-	width: 50%;
-}
-.detalle_carrito .valor{
-	font-size: 16px;
-	text-align: right;
-	width: 20%;
-}
-.pers_pedido{
-	border-bottom: 1px solid #ff0000;
-	overflow: hidden;
-}
-.pers_pedido .pedido_para{
-	font-size: 21px;
-	float: right;
-	margin-left: 10px;
-	padding-top: 10px;
+.colum_content section.filosofia .align-right{
 	text-align: right;
 }
-.tt_pagar{
-	color: #ff0000;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 24px;
-	margin-top: 25px;
-	padding: 5px 10px;
-	text-align: right;
+.colum_content figure.imgcenter{
+	display: block;
+	margin: 40px auto;
+	width:96%;
 }
-.tt_pagar label{
-	color: #ff0000;
-	background: transparent;
-	display: inline-block;
-	width: 85px;
-}
-.pago{
-	text-align: center;
-}
-.pago h4{
-	color: #ff0000;
-	font-family: bebas-neue, sans-serif;
-	font-size: 42px;
-	font-weight: normal;
-	margin-bottom: 15px;
-}
-.pago h4 strong{
-	font-size: 58px;
-	font-weight: normal;
-}
-.pago fieldset{
-	border: 0;
-}
-.pago fieldset label{
-	color: #57453e;
-	display: inline-block;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 18px;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	text-align: left;
-	width: 80px;
-}
-.dom_inclu{
-	color: #2c1b03;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 18px;
-	margin-right: 10px;
-	margin-top: 5px;
-	text-align: right;
-}
-
-/*gracias por pedido*/
-.gracias_pedido{
-	color: #57453e;
-	display: inline-block;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 18px;
-	margin-top: 150px;
-	text-align: center;
-	vertical-align: top;
-	width: 70%;
-}
-.txtgracias{
-	font-family: bebas-neue, sans-serif;
-	font-size: 44px;
-}
-.gracias_pedido h6{
-	font-size: 28px;
-	margin: 0;
-	padding: 0;
-}
-.textcont1{
-	font-family: 'Roboto Light', sans-serif;
-	font-size: 21px;
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 380px) and (max-width: 700px)  {
-/* Styles */
-	.cols{
-		display: block;
-		margin: 10px auto 25px auto;
-		min-height: 350px;
-		/*padding: 15px 2% 0 2%;*/
-		width:50%;
-	}
-	section[role="registro"]{
-		width: 85%;
-		margin: 0 auto;
-	}
-	section[role="registro"] article.datos_usuario{
-		display: block;
-		margin: 25px auto;
-		width: 100%;
-	}
-	section[role="registro"]  article.nombreusuario{
-		display: block;
-		margin: 25px auto;
-		width: 100%;
-	}
-	.cols{
-		display: block;
-		margin: 10px auto 25px auto;
-		min-height: 350px;
-		/*padding: 15px 2% 0 2%;*/
-		width:100%;
-	}
-	.cols fieldset{
-		border-bottom: 1px solid #f00;
-		height: 350px;
-	}
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 700px) and (max-width: 1024px)  {
-/* Styles */
-	section[role="registro"]{
-		width: 95%;
-		margin: 0 auto;
-	}
-	section[role="registro"] article.datos_usuario{
-		display: block;
-		margin: 25px auto;
-		width: 60%;
-	}
-	section[role="registro"]  article.nombreusuario{
-		display: block;
-		margin: 25px auto;
-		width: 60%;
-	}
-	.ccenter{
-		margin: 7% auto 0 auto;
-	}
-	.qdesea_cat{
-		width: 90%;
-		margin:0 auto 25px auto;
-		padding-top: 100px;
-	}
-	.menucat{
-		width: 40%;
-	}
-	.selec_producto .categories{
-		margin-left:25px;
+@media only screen and (min-width: 380px) and (max-width: 799px)  {
+	.colum_menu{
+		margin-left:10px;
 		margin-right: 30px;
 	}
-	.show_detail{
-   	 min-height: 460px;
+	.selec_page{
+		padding-top: 10px;
 	}
-	.show_detail article aside{
+	.colum_content{
 		display: block;
 		margin:0 auto;
+		width:95%;
+	}
+	.colum_content figure.left{
+		display: block;
+		margin: 10px auto;
 		width:80%;
 	}
-	.show_detail article figure{
+	
+	.colum_content section.historia{
 		display: block;
-		margin: 0 auto;
-		width: 60%;
+		margin: 40px auto;
+		width:90%;
 	}
-	.show_detail article figure img{
-		width: 100%;
-	}
-	.producto fieldset{
-		margin: 20px auto;
-		width: 90%;
-	}
-	aside.produc_selec {
-		margin-bottom:  50px;
-	}
-	.cols{
-		margin: 10px auto 25px auto;
-		
-		width:33%;
-	}
-	.cols fieldset{
-		border-right: 1px solid #f00;
-		height: 350px;
+	section.filosofia{
+		display: block;
+		margin: 40px auto;
+		width:95%;
 	}
 }
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-/* Styles */
-	section[role="registro"] article.datos_usuario{
-		margin-left: 200px;
-		width: 25%;
-	}
-	section[role="registro"]  article.nombreusuario{
-		margin-left: 5px;
-		width: 40%;
-	}
-	.ccenter{
-		margin: 24% auto 0 auto;
-	}
-	.qdesea_cat{
-		width: 70%;
-		margin:0 auto 25px auto;
-		padding-top: 100px;
-	}
-	.menucat{
-		width: 50%;
-	}
-	.selec_producto .categories{
+@media only screen and (min-width: 800px) and (max-width: 1024px)  {
+	.colum_menu{
 		margin-left:25px;
 		margin-right: 30px;
 	}
-	.show_detail{
-   	 min-height: 280px;
+	.selec_page{
+		padding-top: 30px;
 	}
-	.show_detail article figure{
-		width: 50%;
+	.colum_content{
+		width:75%;
 	}
-	.show_detail article aside{
+	.colum_content figure.left{
+		margin: 20px 10px;
 		width:40%;
 	}
-	.show_detail article figure img{
-		display: block;
-		margin: 0 auto;
-		width: 90%;
+	.colum_content section.historia{
+		margin: 20px 15px;
+		width:51%;
 	}
-	aside.produc_selec {
-		margin-bottom:  110px;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+	.colum_menu{
+		margin-left:25px;
+		margin-right: 30px;
 	}
-	.cols{
-		margin-bottom: 50px;
-		min-height: 350px;
-		/*padding: 15px 2% 0 2%;*/
-		width: 28%;
+	.selec_page{
+		padding-top: 50px;
 	}
-	.cols fieldset{
-		border-right: 1px solid #f00;
+	.colum_content{
+		width:81%;
+	}
+	.colum_content figure.left{
+		margin: 20px 10px;
+		width:40%;
+	}
+	
+	.colum_content section.historia{
+		margin: 20px 15px;
+		width:53%;
 	}
 }
 @media only screen and (min-width: 1281px) {
-	section[role="registro"]{
-		width: 90%;
-		margin: 0 auto;
-	}
-	section[role="registro"] article.datos_usuario{
-		margin-left: 170px;
-		width: 25%;
-	}
-	section[role="registro"]  article.nombreusuario{
-		margin-left: 5px;
-		width: 40%;
-	}
-
-	.ccenter{
-		margin: 22% auto 0 auto;
-	}
-	.login input[type="text"], .login input[type="password"]{
-		width: 244px;
-	}
-	.qdesea_cat{
-		width: 65%;
-		margin:0 auto 25px auto;
-		padding-top: 100px;
-	}
-	.menucat{
-		width: 50%;
-	}
-	.selec_producto .categories{
-		margin-left:40px;
+	.colum_menu{
+		margin-left:50px;
 		margin-right: 30px;
 	}
-	.cols{
-		margin-bottom: 50px;
-		/*padding: 15px 2% 0 2%;*/
-		width: 33%;
+	.selec_page{
+		padding-top: 50px;
 	}
-	.cols fieldset{
-		border-right: 1px solid #f00;
-		height: 350px;
+	.colum_content{
+		width:80%;
 	}
-	.cols fieldset, .cols h2{
-		padding: 15px 30px 20px 30px;
-	}
-	.show_detail{
-   	 min-height: 280px;
-	}
-	.show_detail article figure{
-		width: 50%;
-	}
-	.show_detail article aside{
+	.colum_content figure.left{
+		margin: 20px 10px;
 		width:40%;
 	}
-	.show_detail article figure img{
-		display: block;
-		margin: 0 auto;
-		width: 80%;
-	}
-	aside.produc_selec {
-		margin-bottom:  110px;
+	.colum_content section.historia{
+		margin: 20px 15px;
+		width:53%;
 	}
 }

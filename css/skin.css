@@ -103,11 +103,8 @@ nav[role="first_menu"] li:hover ul{
 footer{
 	background-color:#2c210b;
 	padding: 15px 0;
-	position: fixed;
 	overflow: hidden;
-	bottom: 0;
 	width: 100%;
-	z-index: 55;
 }
 nav[role="second_menu"], aside[role="socialmedia"]{
 	display: inline-block;
@@ -241,15 +238,18 @@ p.bjqs-caption{
 }
 
 /***/
-@media only screen and (min-width: 320px) and (max-width:800px)  {
-/* Styles */
+@media only screen and (min-width: 320px) and (max-width:799px)  {
+	/* Styles */
+	footer{
+		position: relative;
+	}
 	.container{
 		margin: 0 auto;
-		width: 100%;
+		width: 97%;
 	}
 	figure[role="logo"]{
 		height: 188px;
-		left: 25px;
+		left: 10px;
 		width: 127px;
 	}
 	header[role="top"]{
@@ -274,7 +274,11 @@ p.bjqs-caption{
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 800px) and (max-width: 1024px)  {
+
 /* Styles */
+	footer{
+		position: relative;
+	}
 	.container{
 		margin: 0 auto;
 		width: 100%;
@@ -307,8 +311,13 @@ p.bjqs-caption{
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
 /* Styles */
+	footer{
+		position: fixed;
+		bottom: 0;
+		z-index: 55;
+	}
 	.container{
 		margin: 0 auto;
 		width: 100%;
@@ -336,8 +345,14 @@ p.bjqs-caption{
 	.ingresar{
 		right: 30px;
 	}
+
 }
 @media only screen and (min-width: 1280px) {
+	footer{
+		position: fixed;
+		bottom: 0;
+		z-index: 55;
+	}
 	.container{
 		margin: 0 auto;
 		width: 1280px;
