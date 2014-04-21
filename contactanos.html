@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/skin.css">
 <link rel="stylesheet" href="css/style.css"></head>
 <link rel="stylesheet" href="css/bjqs.css">
+<link rel="stylesheet" href="css/int-presto.css">
 <link rel="stylesheet" href="css/pedido-presto.css">
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
 <script src="//use.edgefonts.net/bebas-neue:n4:all.js"></script>
@@ -172,7 +173,7 @@
 	      </section>
 		<section class="container">
 			 <!-- End header section -->
-			<section role="productos">
+			<section role="contactanos">
 				<section class="ingresar">
 					<a class="fancybox" href="#login">Pide en l&iacute;nea</a>
 				</section>
@@ -182,7 +183,8 @@
 opiniones y sugerencias</h3>
 					</header>
 					<form>
-						<label for="1">Nombre</label>
+					<aside class="formcontact">
+						<fieldset><label for="1">Nombre</label>
 						<input type="text" id="1">
 						<label for="2">Correo</label>
 						<input type="text" id="2">
@@ -192,7 +194,8 @@ opiniones y sugerencias</h3>
 						<select name="" id="">
 							<option value="">Carrera</option>
 						</select>
-						<label for="">Asunto</label>
+						</fieldset>
+						<fieldset><label for="asunto">Asunto</label>
 						<select name="" id="">
 							<option value="">Compras o servicio a Domicilio</option>
 							<option value="">Compras o servicio en puntos de venta</option>
@@ -204,8 +207,13 @@ opiniones y sugerencias</h3>
 							<option value="">Fiestas</option>
 							<option value="">Otros</option>
 						</select>
+						<label for="comentario">Comentario</label>
+						<TEXTAREA></TEXTAREA>
 						<input type="submit" name="enviar" id="enviar" value="Enviar" class="botones">
+						</fieldset>
+						</aside>
 					</form>
+
 				</section>
 			</section>
 			 <!-- start footer section -->
