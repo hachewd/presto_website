@@ -1,15 +1,6 @@
  jQuery(document).ready(function($) {
-          $('#banner-slide').bjqs({
-            animtype      : 'slide',
-            height        : 486,
-            width         : 1280,
-            responsive    : true,
-            showmarkers : false,
-            randomstart   : true
-          });
            $('#addprod').click(function(){
 	        	$('.cart_detail').css('display','block');
-	      		//$('.window').css('visibility', 'visible');
 	      		$('.cart_detail').animate({
 	      			opacity: 1,
 	      			right: 0,
@@ -22,8 +13,6 @@
       ancMenu.each(function(indice, elemento) {
          $(elemento).click(function(){
           attr = $(this).attr('href');
-        //$('.active').removeClass( "active" ).addClass( "inactive" );
-        
         $('.active').animate({
           opacity: 0,
           'z-index':20,
@@ -38,11 +27,8 @@
           
        });
       });
-
-
 });
-
-      /*end component products slider*/
+      /*end component address*/
       var desp = new Array;
       $('.direccion legend a').each(function(indice, elemento){
         desp[indice] = 0;

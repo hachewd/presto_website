@@ -8,11 +8,10 @@
 <link rel="stylesheet" href="css/style.css"></head>
 <link rel="stylesheet" href="css/bjqs.css">
 <link rel="stylesheet" href="css/pedido-presto.css">
-<link rel="stylesheet" href="css/tabs.css">
+<link rel="stylesheet" href="css/int-presto.css">
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
 <script src="//use.edgefonts.net/bebas-neue:n4:all.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.10366.js"></script>
-
 <script src="js/jquery.min.js"></script>
 <script src="js/bjqs-1.3.min.js"></script>
 	<!-- Add fancyBox main JS and CSS files -->
@@ -40,11 +39,15 @@
 					}
 				}
 			});
+			
+
+			
 		});
 	</script>
 
 </head>
 <body>
+
 	<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -167,50 +170,33 @@
 					<a href="lista_categorias.html" class="botones ">Continuar</a>
 				</p>
 		      	</section>
-		      	<section id="observ" class="screen" style="display:none">
-		      		<h3>Observaciones</h3>
-		      		<textarea rows="4" cols="50">Por favor enviar mucha salsa presto y que la gaseosa esté
-bien fria!</textarea>
-		      		<INPUT type="submit" value="ok">
+		      	<section id="promo" class="screen" style="display:none">
+		      		<aside>
+		      			<img src="images/promo1_detalle.jpg" alt="promo1">
+		      		</aside>
+		      		<aside class="text-center"><a href="#" class="botones">Ok, pedir</a></aside>
 		      	</section>
 	      </section>
 		<section class="container">
-			<!-- end header section -->
+			 <!-- End header section -->
 			<section role="productos">
 				<section class="ingresar">
-					<aside class="usuario">Silvia Catalina <aside class="estado"></aside></aside>
+					<a class="fancybox" href="#login">Pide en l&iacute;nea</a>
 				</section>
-				<section class="selec_producto">
-					<section class="colum">
-						<nav class="categories">
-							<ul>
-								<li><a href="productos_hamburguesa.html">Hamburguesas</a></li>
-								<li><a href="">Fundidos</a></li>
-								<li><a href="">Ensaladas</a></li>
-								<li><a href="">Otros</a></li>
-								<li><a href="">Acompa&ntilde;amientos</a></li>
-								<li><a href="">Men&uacute; Infantil</a></li>
-								<li><a href="">Postres</a></li>
-								<li><a href="">Bebidas</a></li>
-							</ul>
-						</nav></section>
-				<section class="gracias_pedido">
-						<!-- CONTENT BLOCK -->
-						<h6>Tu pedido llegar&aacute; de 40 a 45 minutos</h6>
-						<p class="textcont1">carrera 13b # 163 - 5O torre 8 apto 301</p>
-						<br/>
-						<br/>
-						<br/>
-					<aside class="txtgracias">&#161;GRACIAS POR PEDIR EN PRESTO!</aside>
-					<br/><br/>
-					<br/>
-					<a href="#" class="botones">Cerrar sesi&oacute;n</a>
-					
+				<section class="promos">
+					<h2>cliente fiel</h2>
+					<figure class="listarpromos">
+						<a href="#promo" class="fancybox" ><img src="images/promo1.jpg" alt="promo1"></a>
+					</figure>
+					<figure class="listarpromos">
+						<img src="images/promo2.jpg" alt="promo2"><br/>
+						<img src="images/promo3.jpg" alt="promo2">
+					</figure>
 					
 				</section>
 			</section>
+			 <!-- start footer section -->
 		</section>
-		<!-- start footer section -->
 	</section>
 	<footer>
 		<section class="container">
@@ -229,12 +215,8 @@ bien fria!</textarea>
 		</aside>
 		</section>
 	</footer>
-	<!-- JS -->
-	<script type="text/javascript" src="js/vendor/waypoints.min.js"></script>
-	<script type="text/javascript" src="js/vendor/waypoints-sticky.min.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery.tabslet.min.js"></script>
-	<script src="js/initializers.js"></script>
-	<!-- JS ends -->
-   <!-- end footer section -->
+	
+	<script src="js/hwd-1.1.js"> </script>
+	<!-- end footer section -->
 </body>
 </html>

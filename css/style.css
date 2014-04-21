@@ -47,6 +47,9 @@
 .icon-lock:before {
 	content: "\e607";
 }
+.icon-checkmark:before {
+	content: "\e609";
+}
 .icon-facebook:before {
 	content: "\e608";
 }

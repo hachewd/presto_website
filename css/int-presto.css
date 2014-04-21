@@ -153,7 +153,9 @@
 	font-size: 27px;
 	margin-left:50px;
 }
-
+.text-center{
+	text-align: center;
+}
 /*calidad*/
 .resaltar{
 	color: #534741;
@@ -176,6 +178,119 @@
 	float: right;
 	margin-left: 40px;
 	text-align: right;
+}
+.images-left{
+	clear: right;
+	display: inline-block;
+	float: left;
+	margin-right: 40px;
+}
+.images-right{
+	clear: left;
+	display: inline-block;
+	float: right;
+	margin-left: 40px;
+}
+.colum_content section.sostenibilidad p{
+	font-size: 18px;
+}
+
+/*promos*/
+.promos .listarpromos{
+	display: inline-block;
+	vertical-align: top;
+}
+.promos .listarpromos img{
+	border: 1px solid #000;
+	margin-bottom: 8px;
+	width: 100%;
+}
+.promos .listarpromos{
+	margin: 20px 10px 0 0;
+}
+.promos h2{
+	color: #534741;
+	font-family: bebas-neue, sans-serif;
+	font-size: 56px;
+	font-weight: normal;
+	padding: 25px 0;
+}
+
+/*encuentranos*/
+section[role="encuentranos"] .mapa{
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	width: 100%;
+}
+.configurar_mapa{
+	background: #ff0000;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+.configurar_mapa label{
+	display: inline-block;
+	margin: 2px 5px 2px 15px;
+}
+.configurar_mapa input[type="text"], .configurar_mapa select{
+	border:0;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	margin: 5px;
+	padding:2px 5px;
+}
+ .configurar_mapa select{
+	width: 150px;
+	}
+.configurar_mapa input[type="submit"]{
+	background: #fff;
+	border: 0;
+	border-radius: 5px;
+	color: #ff0000;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 5px;
+	padding: 6px;
+}
+
+.locales table{
+	width: 100%;
+}
+.locales table tbody, .locales table thead{
+	color: #2c1b03;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.locales table thead{
+	font-size: 16px;
+	text-align: center;
+}
+.locales table thead th{
+	font-weight: normal;
+}
+.locales table tbody {
+	text-align: center;
+}
+.locales table tbody td{
+	border-bottom: 1px solid #2c1b03;
+}
+.locales table .direcc{
+	font-size: 20px;
+	text-align: left;
+}
+.locales table .direcc strong{
+	font-size: 23px;
+}
+.tipo{
+	color: #ff0000;
+}
+.locales table th, .locales table td{
+	padding: 5px;
+}
+
+.locales table .direcc .horario{
+	font-size: 18px;
 }
 @media only screen and (min-width: 380px) and (max-width: 799px)  {
 	.colum_menu{
@@ -212,6 +327,21 @@
 		float: none;
 		margin: 20px auto;
 	}
+	.promos{
+		margin: 0px auto;
+		width: 90%;
+	}
+	section[role="encuentranos"]{
+		margin: 0 auto;
+		width: 90%;
+	}
+	section[role="encuentranos"] .mapa{
+		height: 250px;
+	}
+	.configurar_mapa{
+		margin: 20px auto;
+		width: 95%;
+	}
 }
 @media only screen and (min-width: 800px) and (max-width: 1024px)  {
 	.colum_menu{
@@ -232,7 +362,21 @@
 		margin: 20px 15px;
 		width:51%;
 	}
-	
+	section[role="encuentranos"]{
+		margin: 0 auto;
+		width: 90%;
+	}
+	section[role="encuentranos"] .mapa{
+		height:400px;
+	}
+	.configurar_mapa{
+		margin: 20px auto;
+		width: 95%;
+	}
+	.locales{
+		margin: 0 auto;
+		width: 85%;
+	}
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	.colum_menu{
@@ -254,6 +398,21 @@
 		margin: 20px 15px;
 		width:53%;
 	}
+	section[role="encuentranos"]{
+		margin: 0 auto;
+		width: 70%;
+	}
+	section[role="encuentranos"] .mapa{
+		height:450px;
+	}
+	.configurar_mapa{
+		margin: 20px auto;
+		width: 90%;
+	}
+	.locales{
+		margin: 0 auto;
+		width: 85%;
+	}
 }
 @media only screen and (min-width: 1281px) {
 	.colum_menu{
@@ -273,5 +432,24 @@
 	.colum_content section.historia{
 		margin: 20px 15px;
 		width:53%;
+	}
+	.promos{
+		margin: 0px auto;
+		width: 60%;
+	}
+	section[role="encuentranos"]{
+		margin: 0 auto;
+		width: 70%;
+	}
+	section[role="encuentranos"] .mapa{
+		height:450px;
+	}
+	.configurar_mapa{
+		margin: 20px auto;
+		width: 90%;
+	}
+	.locales{
+		margin: 0 auto;
+		width: 85%;
 	}
 }
