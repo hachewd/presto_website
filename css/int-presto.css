@@ -356,7 +356,7 @@ section[role="contactanos"] h3{
 	text-align: center;
 }
 /*Ley de proteccion y normas de la comunidad*/
-.leyproteccion p,.leyproteccion h4{
+.leyproteccion p,.leyproteccion h4, .datoscontacto aside,.leyproteccion h5{
 	color: #534741;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 18px;
@@ -368,16 +368,75 @@ section[role="contactanos"] h3{
 	font-weight: bold;
 }
 .datoscontacto{
-	margin: 15px auto;
-	text-align: center;
 	width: 80%;
 }
-
-.datoscontacto h3{
+.datoscontacto, p.centrar{
+	margin: 15px auto;
+	text-align: center;
+}
+.datoscontacto strong{
 	color: #534741;
+	clear: right;
+	float: left;
 	font-family: bebas-neue, sans-serif;
 	font-size: 56px;
 	font-weight: normal;
+	margin: 0 10px;
+	vertical-align: top;
+}
+.leyproteccion h5{
+	font-weight: bold;
+}
+.leyproteccion h4.bebas{
+	color: #534741;
+	font-family: bebas-neue, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+}
+.leyproteccion fieldset{
+	border: 0;
+	margin:0;
+	padding: 8px 0;
+}
+.leyproteccion fieldset label{
+	display: inline-block;
+	padding: 5px 0;
+}
+.leyproteccion fieldset legend{
+	color: #ff0000;
+	font-family: bebas-neue, sans-serif;
+	font-size: 21px;
+	font-weight: normal;
+}
+.leyproteccion .campos{
+	display:inline-block;
+	font-family: 'Roboto light', sans-serif;
+	font-size: 14px;
+	padding: 0 8px;
+	vertical-align: top;
+}
+/*fiestas*/
+section[role="fiestas"]{
+	background:#bfe5e1 url(../images/fondo_fiestas.jpg) repeat-x;
+}
+section[role="otrasfiestas"]{
+	background:#00b3a7 url(../images/fondo_otrasfiestas.png);
+}
+.fiestas{
+	position: relative;
+}
+.fiestas img.content{
+	position: relative;
+	width:100%;
+	z-index: 10;
+}
+.reservar{
+	display: block;
+	position: absolute;
+	z-index: 11;
+}
+.reservar img{
+	width: 100%;
 }
 @media only screen and (min-width: 380px) and (max-width: 799px)  {
 	.colum_menu{
@@ -446,6 +505,18 @@ section[role="contactanos"] h3{
 	.images_ventajas img{
 		width: 180px;
 	}
+	.images-right,.images-left{
+		clear: none;
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width: 80%;
+	}
+	.reservar{
+		bottom: 20px;
+		right: 10px;
+		width: 100px;
+	}
 }
 @media only screen and (min-width: 800px) and (max-width: 1024px)  {
 	.colum_menu{
@@ -502,6 +573,11 @@ section[role="contactanos"] h3{
 	.leyproteccion{
 		margin: 0 auto;
 		width: 95%;
+	}
+	.reservar{
+		bottom: 50px;
+		right: 80px;
+		width: 150px;
 	}
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -561,6 +637,11 @@ section[role="contactanos"] h3{
 	.leyproteccion{
 		margin: 0 auto;
 		width: 75%;
+	}
+	.reservar{
+		bottom: 50px;
+		right: 80px;
+		width: 200px;
 	}
 }
 @media only screen and (min-width: 1281px) {
@@ -630,5 +711,10 @@ section[role="contactanos"] h3{
 	.leyproteccion{
 		margin: 0 auto;
 		width: 75%;
+	}
+	.reservar{
+		bottom: 50px;
+		right: 100px;
+		width: 275px;
 	}
 }
