@@ -74,7 +74,7 @@ $(window).resize(function(){
 });
 
 $(".icon-menu2").click(function(){
-  despMenu()
+  despMenu();
 });
 function despMenu(){
    if(estMenu == 0){

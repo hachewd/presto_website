@@ -258,12 +258,19 @@ p.bjqs-caption{
 #smallmenu ul{
 	display: none;
 }
-
+.icon-menu2{
+	color: #fff;
+	font-size: 30px;
+	position: relative;
+	text-decoration: none;
+	z-index: 75;
+}
 @media only screen and (min-width: 280px) and (max-width:750px)  {
 	/* Styles */
 	nav[role="first_menu"]{
 		padding-top: 25px;
 		padding-bottom: 25px;
+		text-align: left;
 	}
 	
 	footer{
@@ -275,21 +282,21 @@ p.bjqs-caption{
 	}
 	figure[role="logo"]{
 		height: 188px;
-		left: 38%;
+		left: 35%;
 		width: 127px;
 	}
 	header[role="top"]{
-		height: 180px;
+		height: 150px;
 	}
 	
 	#menuprin{
 		background-color:rgba(44,33,11,0.9);
 		display: none;
-		left: 0px;
+		left: 0;
 		overflow: hidden;
 		opacity: 0;
 		position: absolute;
-		top: 0;
+		top: 20px;
 		width: 180px;
 		z-index: 50;
 	}
