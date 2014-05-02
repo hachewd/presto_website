@@ -72,26 +72,10 @@ nav[role="first_menu"] li ul{
 	background: #c80000;
 	margin:0;
 	position: absolute;
-	right: 5px;
 	visibility: hidden;
-	width: 230%;
 	z-index: 35;
 }
-nav[role="first_menu"] li ul.promos{
-	left: 5px;
-	width: 350%;
-}
-nav[role="first_menu"] li ul.disf{
-	left: 5px;
-	width: 250%;
-}
-nav[role="first_menu"] li ul.encuentranos{
-	color: #fff;
-	font-family: bebas-neue, sans-serif;
-	padding: 12px 10px;
-	right: 5px;
-	width: 270%;
-}
+
 nav[role="first_menu"] li li{
 	display: inline-block;
 	vertical-align: top;
@@ -292,6 +276,7 @@ p.bjqs-caption{
 	}
 	nav[role="first_menu"] li:hover li{
 		display: none;
+		visibility: hidden;
 	}
 	footer{
 		position: relative;
@@ -375,6 +360,13 @@ p.bjqs-caption{
 	.ingresar{
 		right: 10px;
 	}
+	nav[role="first_menu"] li ul.encuentranos{
+		color: #fff;
+		font-family: bebas-neue, sans-serif;
+		padding: 12px 10px;
+		right: 5px;
+		width: 180%;
+	}
 }
 
 /* Desktops and laptops ----------- */
@@ -416,7 +408,13 @@ p.bjqs-caption{
 	.ingresar{
 		right: 30px;
 	}
-
+	nav[role="first_menu"] li ul.encuentranos{
+		color: #fff;
+		font-family: bebas-neue, sans-serif;
+		padding: 12px 10px;
+		right: 5px;
+		width: 270%;
+	}
 }
 @media only screen and (min-width: 1280px) {
 	nav li{
@@ -469,4 +467,24 @@ p.bjqs-caption{
 	#menuprin{
 		display: block;
 	}
+	nav[role="first_menu"] li ul.promos{
+		left: 5px;
+		width: 350%;
+	}
+	nav[role="first_menu"] li ul.disf{
+		left: 5px;
+		width: 250%;
+	}
+	nav[role="first_menu"] li ul.encuentranos{
+		color: #fff;
+		font-family: bebas-neue, sans-serif;
+		padding: 12px 10px;
+		right: 5px;
+		width: 270%;
+	}
+	nav[role="first_menu"] li ul.fiestas{
+		right: 5px;
+		width: 230%;
+	}
+
 }
