@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="css/bjqs.css">
 <link rel="stylesheet" href="css/pedido-presto.css">
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/modernizr.custom.10366.js"></script>
 <script src="//use.edgefonts.net/bebas-neue:n4:all.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.10366.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bjqs-1.3.min.js"></script>
 	<!-- Add fancyBox main JS and CSS files -->
@@ -22,11 +22,9 @@
 			 *  Simple image gallery. Uses default settings
 			 */
 			$('.fancybox').fancybox();
-
 			/*
 			 *  Different effects
 			 */
-
 			// Change title type, overlay closing speed
 			$(".fancybox-effects-a").fancybox({
 				helpers: {
@@ -38,14 +36,12 @@
 					}
 				}
 			});
-			
-
-			
 		});
 	</script>
 
 </head>
 <body>
+
 	<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -128,7 +124,7 @@
 			</ul>
 		</section>
 	</nav>
-	<section id="contenido" role="contenido">
+	<section id="contenido">
 		<section class="screens">
 		   	<section id="login" class="screen" style="display: none;">
 		     		<p class="center">
@@ -158,12 +154,14 @@
 					</p>
 		      	</section>
 		      	<section id="address" class="screen" style="display:none">
-		      		<p class="center"><h5>&#191;d&oacute;nde quieres tu pedido?</h5></p>
-		      		<input type="radio" name="sex" value="male"/><label>Carrera 13b # 163 - 5O torre 8 apto 301</label><br>
-					<input type="radio" name="sex" value="female"/><label>Carrera 7 # 109 - 40 apto 102</label><br/>
-					<p class="center"><a href="#">Agregar otra direcci&oacute;n</a><br/>
-					* Puede variar respecto a tu zona de ubicaci&oacute;n<br/>
-					<a href="lista_categorias.html" class="botones">Continuar</a>
+		      		<h5>&#191;d&oacute;nde quieres tu pedido?</h5>
+		      		<fieldset>
+			      		<input type="radio" name="address" value="casa"/><label>Carrera 13b # 163 - 5O torre 8 apto 301</label><br>
+						<input type="radio" name="address" value="oficina"/><label>Carrera 7 # 109 - 40 apto 102</label><br/>
+					</fieldset>
+					<p class="center"><a href="#" class="addnew">Agregar otra direcci&oacute;n</a><br/>
+					* Puede variar respecto a tu zona de ubicaci&oacute;n<br/><br/>
+					<a href="lista_categorias.html" class="botones ">Continuar</a>
 				</p>
 		      	</section>
 	      </section>
@@ -178,7 +176,7 @@
 					<section class="colum menucat">
 						<aside class="cupon"><label>Tengo un cup&oacute;n</label><input type="text" size="14" placeholder="C&Oacute;DIGO CUP&Oacute;N"><a href="#">ok</a></aside>
 						<a href="#" class="links">COMO IDENTIFICAR C&Oacute;DIGO DE CUP&Oacute;N</a>
-						<nav class="categories">
+						<nav class="categories menuprod">
 							<ul>
 								<li><a href="productos_hamburguesa.html">Hamburguesas</a></li>
 								<li><a href="">Fundidos</a></li>

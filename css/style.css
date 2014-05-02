@@ -47,6 +47,12 @@
 .icon-lock:before {
 	content: "\e607";
 }
+.icon-menu:before {
+	content: "\e60a";
+}
+.icon-menu2:before {
+	content: "\e60b";
+}
 .icon-checkmark:before {
 	content: "\e609";
 }

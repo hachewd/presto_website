@@ -216,7 +216,6 @@ h3.subtitle strong{
 }
 
 .categories li{
-	display: block;
 	font-family: bebas-neue, sans-serif;
 }
 .categories li a{
@@ -227,9 +226,7 @@ h3.subtitle strong{
 	text-align: center;
 	text-transform: uppercase;
 }
-.categories{
-	margin-top: 25px;
-}
+
 .categories li a:hover{
 	color:#ff0000;
 }
@@ -282,7 +279,6 @@ h3.subtitle strong{
 	background: url(../images/carrito_ico.png) no-repeat -60px 0px;
 }
 .producto{
-	width:58%;
 	margin-right: 5%;
 	margin-left: 5%;
 	margin-bottom: 50px;
@@ -592,7 +588,7 @@ aside.produc_selec {
 }
 .producto fieldset{
 	border: 0px;
-	width: 35%;
+	width: 240px;
 	text-align: center;
 }
 .producto fieldset label{
@@ -636,9 +632,7 @@ aside.produc_selec {
 
 
 /*personalizar menu tabs*/
-.agregar_prod{
-	width: 55%;
-}
+
 .cols-left, .cols-right, .agregar_prod article header h2, div.pedidoparas{
 	display: inline-block;
 	vertical-align: top;
@@ -719,11 +713,8 @@ div.pedidopara input{
 .detalle_carrito{
 	margin-right: 20px;
 	margin-bottom: 30px;
-	width: 35%;
 }
-.totales_pago{
-	width: 25%;
-}
+
 .detalle_carrito article{
 	font-family: 'Roboto Condensed', sans-serif;
 	margin: 10px;
@@ -846,10 +837,8 @@ div.pedidopara input{
 	display: inline-block;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 18px;
-	margin-top: 150px;
 	text-align: center;
 	vertical-align: top;
-	width: 70%;
 }
 .txtgracias{
 	font-family: bebas-neue, sans-serif;
@@ -865,7 +854,7 @@ div.pedidopara input{
 	font-size: 21px;
 }
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 380px) and (max-width: 799px)  {
+@media only screen and (min-width: 280px) and (max-width: 750px)  {
 /* Styles */
 	.cols{
 		display: block;
@@ -888,6 +877,15 @@ div.pedidopara input{
 		margin: 25px auto;
 		width: 100%;
 	}
+	.categories li{
+		display: inline-block;
+	}
+	.categories{
+		margin-top: 10px;
+	}
+	.show_detail{
+   	 min-height: 460px;
+	}
 	.cols{
 		display: block;
 		margin: 10px auto 25px auto;
@@ -899,9 +897,24 @@ div.pedidopara input{
 		border-bottom: 1px solid #f00;
 		height: 350px;
 	}
+	.menuprod li{
+		display: block;
+	}
+	.agregar_prod{
+		display: block;
+		margin: 25px auto;
+		width: 95%;
+	}
+	.agregar_prod ul.horizontal li a{
+		font-size: 16px;
+	}
+	.gracias_pedido{
+		margin-top: 75px;
+		width:100%;
+	}
 }
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 800px) and (max-width: 1024px)  {
+@media only screen and (min-width: 750px) and (max-width: 1024px)  {
 /* Styles */
 	section[role="registro"]{
 		width: 95%;
@@ -916,6 +929,9 @@ div.pedidopara input{
 		display: block;
 		margin: 25px auto;
 		width: 60%;
+	}
+	.categories li{
+		display: block;
 	}
 	.ccenter{
 		margin: 7% auto 0 auto;
@@ -948,10 +964,7 @@ div.pedidopara input{
 	.show_detail article figure img{
 		width: 100%;
 	}
-	.producto fieldset{
-		margin: 20px auto;
-		width: 90%;
-	}
+	
 	aside.produc_selec {
 		margin-bottom:  50px;
 	}
@@ -963,6 +976,16 @@ div.pedidopara input{
 	.cols fieldset{
 		border-right: 1px solid #f00;
 		height: 350px;
+	}
+	.agregar_prod{
+		width: 70%;
+	}
+	.agregar_prod ul.horizontal li a{
+		font-size: 16px;
+	}
+	.gracias_pedido{
+		margin-top: 75px;
+		width: 70%;
 	}
 }
 
@@ -977,11 +1000,14 @@ div.pedidopara input{
 		margin-left: 5px;
 		width: 40%;
 	}
+	.categories li{
+		display: block;
+	}
 	.ccenter{
 		margin: 24% auto 0 auto;
 	}
 	.qdesea_cat{
-		width: 70%;
+		width: 80%;
 		margin:0 auto 25px auto;
 		padding-top: 100px;
 	}
@@ -1015,9 +1041,22 @@ div.pedidopara input{
 		/*padding: 15px 2% 0 2%;*/
 		width: 28%;
 	}
+	.categories{
+		margin-top: 25px;
+	}
 	.cols fieldset{
 		border-right: 1px solid #f00;
 		min-height: 350px;
+	}
+	.producto{
+		width:58%;
+	}
+	.agregar_prod{
+		width: 55%;
+	}
+	.gracias_pedido{
+		margin-top: 150px;
+		width: 70%;
 	}
 }
 @media only screen and (min-width: 1281px) {
@@ -1033,7 +1072,9 @@ div.pedidopara input{
 		margin-left: 5px;
 		width: 40%;
 	}
-
+	.categories li{
+		display: block;
+	}
 	.ccenter{
 		margin: 22% auto 0 auto;
 	}
@@ -1078,7 +1119,26 @@ div.pedidopara input{
 		margin: 0 auto;
 		width: 80%;
 	}
+	.producto{
+		width:58%;
+	}
+	.categories{
+		margin-top: 25px;
+	}
 	aside.produc_selec {
 		margin-bottom:  110px;
+	}
+	.agregar_prod{
+		width: 55%;
+	}
+	.detalle_carrito{
+		width: 35%;
+	}
+	.totales_pago{
+		width: 25%;
+	}
+	.gracias_pedido{
+		margin-top: 150px;
+		width: 70%;
 	}
 }
