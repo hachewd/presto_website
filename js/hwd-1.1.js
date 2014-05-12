@@ -56,7 +56,7 @@ $('.direccion legend a').each(function(indice, elemento){
 
 var estMenu = 0;
 
-$(window).resize(function(){
+/*$(window).resize(function(){
   if($(window).width()>750){
     $('#menuprin').css('display','block');
     $('#menuprin').animate({
@@ -92,4 +92,4 @@ function despMenu(){
      });
       estMenu= 0;
     }
-}
+}*/

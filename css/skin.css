@@ -4,9 +4,14 @@ body,h1,h2,h3,h4,h5,p,quote,small,form,input,ul,li,ol,label, figure{
 	padding:0px;
 }
 body{
-	background: url(../images/gradient_container2.jpg) repeat-x 0 bottom;
-	/*height: 100%;*/
+	/*background: url(../images/gradient_container2.jpg) repeat-x 0 bottom;*/
 	width: 100%;
+/*height: 100%;*/
+}
+.topage{
+	position: fixed;
+	width: 100%;
+	z-index: 500;
 }
 header[role="top"]{
 	background: url(../images/topimages.jpg) no-repeat;
@@ -49,7 +54,6 @@ figure[role="logo"]{
 figure[role="logo"] img{
 	display: block;
 	margin:80px auto 0 auto;
-	bottom: 20px;
 	width:80%;
 }
 
@@ -117,7 +121,7 @@ nav[role="first_menu"] li ul.encuentranos input{
 footer{
 	background-color:#2c210b;
 	padding: 15px 0;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	width: 100%;
 }
 nav[role="second_menu"] ul{
@@ -155,8 +159,8 @@ aside[role="socialmedia"] a{
 	text-decoration: none;
 }
 aside[role="socialmedia"]{
-	float: right;
-	margin-right: 25px;
+	/*float: right;
+	margin-right: 25px;*/
 }
 aside[role="socialmedia"] div, aside[role="socialmedia"] a{
 	display: inline-block;
@@ -165,7 +169,6 @@ aside[role="socialmedia"] div, aside[role="socialmedia"] a{
 }
 /*contenido*/
 section[role="contenido"]{
-	padding: 30px 0;
 	position: relative;
 }
 section[role="productos"]{
@@ -265,15 +268,28 @@ p.bjqs-caption{
 	text-decoration: none;
 	z-index: 75;
 }
-@media only screen and (min-width: 280px) and (max-width:750px)  {
+.bggradbt{
+	background: url(../images/gradient_container.jpg) repeat-x 0 0;
+	height: 180px;
+	
+	width: 100%;
+	z-index: -5;
+}
+
+@media only screen and (min-width: 280px) and (max-width:799px)  {
 	/* Styles */
+	section[role="contenido"]{
+		padding-top: 100px;
+	}
 	nav[role="first_menu"]{
 		padding-top: 25px;
-		padding-bottom: 25px;
+		padding-bottom:25px;
 		text-align: left;
 	}
-	
 	footer{
+		position: relative;
+	}
+	.bggradbt{
 		position: relative;
 	}
 	.container{
@@ -281,62 +297,54 @@ p.bjqs-caption{
 		width: 97%;
 	}
 	figure[role="logo"]{
-		height: 188px;
-		left: 35%;
+		height: 80px;
+		right:0px;
 		width: 127px;
 	}
 	header[role="top"]{
-		height: 150px;
+		height: 0;
 	}
-	
-	#menuprin{
-		background-color:rgba(44,33,11,0.9);
-		display: none;
-		left: 0;
-		overflow: hidden;
-		opacity: 0;
-		position: absolute;
-		top: 20px;
-		width: 180px;
-		z-index: 50;
-	}
-	#menuprin ul{
-		margin: 0;
-	}
-	#menuprin li{
+	figure[role="logo"] img{
 		display: block;
-		vertical-align: top;
-		padding: 0;
-		margin:  0;
+		margin:5px auto 0 auto;
+		width:80%;
 	}
-	#menuprin li a{
-		font-size: 18px;
-		text-align: left;
-	}
-	#menuprin li:hover li{
+	#menuprin{
 		display: none;
-		visibility: hidden;
 	}
 	.signup{
-		right: 10px;
+		left: 70px;
 	}
 	.ingresar{
 		right: 10px;
 	}
-	
+	nav[role="second_menu"]{
+		display: none;
+	}
 	nav[role="second_menu"] li{
 		border-right:0;
 	}
+	aside[role="socialmedia"]{
+		display: block;
+		margin: 0 auto;
+		width: 150px;
+	}
 }
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 750px) and (max-width: 1024px)  {
+@media only screen and (min-width: 800px) and (max-width: 1024px)  {
 
 /* Styles */
+	section[role="contenido"]{
+		padding-top: 200px;
+	}
 	nav li{
 		display: inline-block;
 		vertical-align: top;
 	}
 	footer{
+		position: relative;
+	}
+	.bggradbt{
 		position: relative;
 	}
 	.container{
@@ -358,7 +366,7 @@ p.bjqs-caption{
 	}
 	
 	nav[role="first_menu"] li a, nav[role="first_menu"] ul.encuentranos{
-		font-size: 1.3em;
+		font-size: 1.1em;
 	}
 	.signup{
 		right: 10px;
@@ -378,6 +386,10 @@ p.bjqs-caption{
 	}
 	.icon-menu2{
 		display: none;
+		font-weight: none;
+	}
+	aside[role="socialmedia"]{
+		margin-left: 4%;
 	}
 }
 
@@ -392,6 +404,11 @@ p.bjqs-caption{
 		position: fixed;
 		bottom: 0;
 		z-index: 55;
+	}
+	.bggradbt{
+		position: fixed;
+		bottom: 50px;
+		z-index: -5;
 	}
 	.container{
 		margin: 0 auto;
@@ -417,6 +434,9 @@ p.bjqs-caption{
 	nav[role="first_menu"] ul{
 		margin: 0 25px 0 160px;
 	}
+	section[role="contenido"]{
+		padding-top: 200px;
+	}
 	.ingresar{
 		right: 30px;
 	}
@@ -430,6 +450,9 @@ p.bjqs-caption{
 	.icon-menu2{
 		display: none;
 	}
+	aside[role="socialmedia"]{
+		margin-left: 25%;
+	}
 }
 @media only screen and (min-width: 1280px) {
 	nav li{
@@ -440,6 +463,11 @@ p.bjqs-caption{
 		position: fixed;
 		bottom: 0;
 		z-index: 55;
+	}
+	.bggradbt{
+		position: fixed;
+		bottom: 50px;
+		z-index: -5;
 	}
 	.container{
 		margin: 0 auto;
@@ -465,7 +493,8 @@ p.bjqs-caption{
 		font-size: 2.2em;
 	}
 	section[role="contenido"]{
-		min-height: 527px;
+		/*min-height: 527px;*/
+		padding-top: 153px;
 	}
 	.signup{
 		right: 82px;
@@ -504,5 +533,7 @@ p.bjqs-caption{
 	.icon-menu2{
 		display: none;
 	}
-
+	aside[role="socialmedia"]{
+		margin-left: 35%;
+	}
 }
