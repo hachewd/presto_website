@@ -126,8 +126,9 @@
 		</div>
 	</nav>
 	<!-- /mp-menu -->
-
-
+     <div class="scroller"><!-- this is for emulating position fixed of the nav -->
+          <div class="scroller-inner">
+               <!-- Top Navigation -->
 <section class="topage">
 <header role="top">
 	<section class="container top">
@@ -209,8 +210,8 @@
 	
 <section id="contenido" role="contenido">
 	<section class="screens">
-	   	<section id="login" class="screen" style="display: none;">
-	     		<p class="center">
+		<section id="login" class="screen" style="display: none;">
+				<p class="center">
 				<strong class="destacar">Servicio de domicilio en l&iacute;nea</strong><br/>
 					<strong class="note">Dependiendo de tu ubicaci&oacute;n el horario puede variar<br/>
 				12:00 am - 9:00 pm<br/></strong>
@@ -235,23 +236,23 @@
 					<a href="registro.html" class="destacar"><strong>Reg&iacute;strate aqu&iacute;</strong></a><br/>
 					<a href="#" class="destacar note">Beneficios de estar registrado</a>
 				</p>
-	      	</section>
-	      	<section id="address" class="screen" style="display:none">
-	      		<h5>&#191;d&oacute;nde quieres tu pedido?</h5>
-	      		<fieldset>
-		      		<input type="radio" name="address" value="casa"/><label>Carrera 13b # 163 - 5O torre 8 apto 301</label><br/>
+			</section>
+			<section id="address" class="screen" style="display:none">
+				<h5>&#191;d&oacute;nde quieres tu pedido?</h5>
+				<fieldset>
+					<input type="radio" name="address" value="casa"/><label>Carrera 13b # 163 - 5O torre 8 apto 301</label><br/>
 					<input type="radio" name="address" value="oficina"/><label>Carrera 7 # 109 - 40 apto 102</label><br/>
 				</fieldset>
 				<p class="center"><a href="#" class="addnew">Agregar otra direcci&oacute;n</a><br/>
 				* Puede variar respecto a tu zona de ubicaci&oacute;n<br/><br/>
 				<a href="lista_categorias.html" class="botones ">Continuar</a>
 			</p>
-	      	</section>
-      </section>
+			</section>
+	  </section>
 	<section>
 		<section class="screens">
-		   	<section id="login" class="screen" style="display: none;">
-		     		<p class="center">
+			<section id="login" class="screen" style="display: none;">
+					<p class="center">
 					<strong class="destacar">Servicio de domicilio en l&iacute;nea<br/>
 						<strong class="note">Dependiendo de tu ubicaci&oacute;n el horario puede variar</strong><br/>
 					12:00 am - 9:00 pm<br/></strong>
@@ -276,24 +277,24 @@
 						<a href="registro.html" class="destacar"><strong>Reg&iacute;strate aqu&iacute;</strong></a><br/>
 						<a href="#" class="destacar note">Beneficios de estar registrado</a>
 					</p>
-		      	</section>
-		      	<section id="address" class="screen" style="display:none">
-		      		<h5>&#191;d&oacute;nde quieres tu pedido?</h5>
-		      		<fieldset>
-			      		<input type="radio" name="address" value="casa"/><label>Carrera 13b # 163 - 5O torre 8 apto 301</label><br/>
+				</section>
+				<section id="address" class="screen" style="display:none">
+					<h5>&#191;d&oacute;nde quieres tu pedido?</h5>
+					<fieldset>
+						<input type="radio" name="address" value="casa"/><label>Carrera 13b # 163 - 5O torre 8 apto 301</label><br/>
 						<input type="radio" name="address" value="oficina"/><label>Carrera 7 # 109 - 40 apto 102</label><br/>
 					</fieldset>
 					<p class="center"><a href="#" class="addnew">Agregar otra direcci&oacute;n</a><br/>
 					* Puede variar respecto a tu zona de ubicaci&oacute;n<br/><br/>
 					<a href="lista_categorias.html" class="botones ">Continuar</a>
 				</p>
-		      	</section>
-		      	<section id="observ" class="screen" style="display:none">
-		      		<h3 class="vent_title">Observaciones</h3>
-		      		<textarea rows="4" cols="50">Por favor enviar mucha salsa presto y que la gaseosa est&eacute; bien fria!</textarea>
-		      		<INPUT type="submit" value="ok">
-		      	</section>
-	      </section>
+				</section>
+				<section id="observ" class="screen" style="display:none">
+					<h3 class="vent_title">Observaciones</h3>
+					<textarea rows="4" cols="50">Por favor enviar mucha salsa presto y que la gaseosa est&eacute; bien fria!</textarea>
+					<INPUT type="submit" value="ok">
+				</section>
+		  </section>
 		<section class="container">
 			<!-- end header section -->
 			<section class="selec_page">
@@ -338,8 +339,7 @@
 							<div class="text05">Disciplina</div>
 						</fieldset>
 						<br/>
-						<br/>
-						<br/>
+						
 					</section>
 				</section>
 			</section>
@@ -364,9 +364,10 @@
 		</aside>
 		</section>
 	</footer>	<!-- end footer section -->
-	</div><!-- /pusher -->
+  </div><!-- /scroller-inner -->
+          </div><!-- /scroller -->s
+     </div><!-- /pusher -->
 </div>
-
 	<script src="js/hwd-1.1.js"> </script>
 	<script src="js/classie.js"></script>
 		<script src="js/mlpushmenu.js"></script>

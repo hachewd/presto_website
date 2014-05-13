@@ -126,18 +126,19 @@
 		</div>
 	</nav>
 	<!-- /mp-menu -->
-
-
+     <div class="scroller"><!-- this is for emulating position fixed of the nav -->
+          <div class="scroller-inner">
+               <!-- Top Navigation -->
 <section class="topage">
-<header role="top">
-	<section class="container top">
-		<figure role="logo"><a href="index.html"><img src="images/presto_logo.png"/></a></figure>
-		<section class="signup">
-			<a class="pedido fancybox" href="#login">Iniciar sesi&oacute;n</a> /
-			<a href="registro.html">Reg&iacute;strate</a>
+	<header role="top">
+		<section class="container top">
+			<figure role="logo"><a href="index.html"><img src="images/presto_logo.png"/></a></figure>
+			<section class="signup">
+				<a class="pedido fancybox" href="#login">Iniciar sesi&oacute;n</a> /
+				<a href="registro.html">Reg&iacute;strate</a>
+			</section>
 		</section>
-	</section>
-</header>
+	</header>
 <nav role="first_menu">
 	<section class="container">
 		<a href="#" id="trigger" class="icon-menu2"></a>
@@ -206,6 +207,7 @@
 	</section>
 </nav>
 </section>
+<section id="contenido" role="contenido">
 	<section class="screens">
 		   	<section id="login" class="screen" style="display: none;">
 		     		<p class="center">
@@ -252,13 +254,21 @@
 		      		<aside class="text-center"><a href="#" class="botones">Ok, pedir</a></aside>
 		      	</section>
 	      </section>
-	<section role="fiestas">}
-		<section class="container">
-			<section class="fiestas">
-				<img src="images/fiestas_infantiles_formulario.png" alt="fiesta" class="content">
-				<a href="reservar_fiesta.html" class="reservar"><img src="images/reservar_aqui.png" alt=""></a>
+		<section role="fiestas">
+			<section class="container">
+				<section class="fiestas">
+					<div class="desktop_reserve">
+						<img src="images/fiestas_infantiles_formulario.png" alt="fiesta" class="content">
+					</div>
+					<div class="movil_reserve">
+						<img src="images/kanguro_escondido.png" alt="kanguro_escondido" class="content">
+						<img src="images/fiestas_title_reserve.png" alt="tituloreservar" class="content">
+						<img src="images/fiesta_subtitle_reserva.png" alt="subtituloreservar" class="content">
+					</div>
+					<a href="reservar_fiesta.html" class="reservar"><img src="images/reservar_aqui.png" alt=""></a>
+				</section>
+				<br/><br/>
 			</section>
-			<br/><br/>
 		</section>
 	</section>
 	<div class="bggradbt"></div>
@@ -279,14 +289,16 @@
 		</aside>
 		</section>
 	</footer>	<!-- end footer section -->
-	</div><!-- /pusher -->
+			</div><!-- /scroller-inner -->
+          </div><!-- /scroller -->
+     </div><!-- /pusher -->
 </div>
 
 	<script src="js/hwd-1.1.js"> </script>
 	<script src="js/classie.js"></script>
-		<script src="js/mlpushmenu.js"></script>
-		<script>
-			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
-		</script>
+	<script src="js/mlpushmenu.js"></script>
+	<script>
+		new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+	</script>
 </body>
 </html>
