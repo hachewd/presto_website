@@ -9,6 +9,16 @@
 		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
+@font-face {
+	font-family: 'bpicons';
+	src:url('../fonts/bpicons/bpicons.eot');
+	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bpicons/bpicons.woff') format('woff'),
+		url('../fonts/bpicons/bpicons.ttf') format('truetype'),
+		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} /* Made with http://icomoon.io/ */
 
 body {
 	background: #34495e;
@@ -186,6 +196,21 @@ a:hover, a:focus {
 
 .info a:hover {
 	color: #336ca6;
+}
+.bp-icon-next:after {
+	content: "\e000";
+}
+.bp-icon-drop:after {
+	content: "\e001";
+}
+.bp-icon-archive:after {
+	content: "\e002";
+}
+.bp-icon-about:after {
+	content: "\e003";
+}
+.bp-icon-prev:after {
+	content: "\e004";
 }
 
 @media screen and (max-width: 69em) {

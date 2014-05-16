@@ -288,11 +288,23 @@ h3.subtitle strong{
 	right: 0px;
 	top: 50px;
 	width: 290px;
-	z-index: 12;
+	z-index: 110;
 }
 
-/**/
-
+/*pedido*/
+.mostrarUsuario{
+	position: absolute;
+	z-index:10;
+}
+.mostrarUsuario a{
+	color:#534741;
+	font-family: 'Roboto Black', sans-serif;
+	font-size: 14px;
+	display: block;
+	padding: 5px 14px 5px 14px;
+	text-decoration: none;
+	transition: all 0.5s ease-out;
+}
 /*columna detalle carrito*/
 .detail{
 	margin-bottom: 10px;
@@ -877,6 +889,10 @@ div.pedidopara input{
 		margin: 25px auto;
 		width: 100%;
 	}
+	.mostrarUsuario{
+		right: 20px;
+		/*bottom: 0px;*/
+	}
 	.categories li{
 		display: inline-block;
 	}
@@ -930,6 +946,7 @@ div.pedidopara input{
 		margin: 25px auto;
 		width: 60%;
 	}
+
 	.categories li{
 		display: block;
 	}
@@ -940,6 +957,9 @@ div.pedidopara input{
 		width: 90%;
 		margin:0 auto 25px auto;
 		padding-top: 100px;
+	}
+	.mostrarUsuario{
+		right: 20px;
 	}
 	.menucat{
 		width: 40%;
@@ -1010,6 +1030,9 @@ div.pedidopara input{
 		width: 80%;
 		margin:0 auto 25px auto;
 		padding-top: 100px;
+	}
+	.mostrarUsuario{
+		right: 30px;
 	}
 	.menucat{
 		width: 50%;
@@ -1085,6 +1108,9 @@ div.pedidopara input{
 		width: 65%;
 		margin:0 auto 25px auto;
 		padding-top: 100px;
+	}
+	.mostrarUsuario{
+		right: 82px;
 	}
 	.menucat{
 		width: 50%;

@@ -231,7 +231,7 @@
 					</aside>
 						
 						<p class="center">
-						&#191;No tienes cuenta en pedido-presto.css? <br/>
+						&#191;No tienes cuenta en Presto? <br/>
 						<a href="registro.html" class="destacar"><strong>Reg&iacute;strate aqu&iacute;</strong></a><br/>
 						<a href="#" class="destacar note">Beneficios de estar registrado</a>
 					</p>
@@ -249,21 +249,15 @@
 		      	</section>
 		      	<section id="observ" class="screen" style="display:none">
 		      		<h3 class="vent_title">Observaciones</h3>
-		      		<textarea rows="4" cols="50">Por favor enviar mucha salsa pedido-presto.css y que la gaseosa est&eacute; bien fria!</textarea>
+		      		<textarea rows="4" cols="50">Por favor enviar mucha salsa presto y que la gaseosa est&eacute; bien fria!</textarea>
 		      		<INPUT type="submit" value="ok">
-		      	</section>
-		      	<section id="personalizar" class="screen" style="display:none">
-		      		<h5 class="vent_title">&#33;NO HAZ PERSONALIZADO PEDIDO!</h5>
-		      		<p class="center">Recuerda que debes escojer la bebida
-incluida en tu combo<br/>
-		      		<a href="personalizar_hamburguesa.html" class="botones ">Personalizar</a></p>
 		      	</section>
 	      </section>
 		<section class="container">
 			<!-- end header section -->
 			<section role="productos">
-				<section class="mostrarUsuario">
-					<aside class="usuario"><a href="#" class="mostrarCarrito">Silvia Catalina <aside class="estado"></aside></a></aside>
+				<section class="ingresar">
+					<aside class="usuario">Silvia Catalina <aside class="estado"></aside></aside>
 				</section>
 				<section class="selec_producto">
 					<section class="colum">
@@ -279,23 +273,70 @@ incluida en tu combo<br/>
 								<li><a href="">Bebidas</a></li>
 							</ul>
 						</nav></section>
-					<section class="colum producto">
-						<aside class="produc_selec"><h4>HAMBURGUESA <strong>QUESO TOCINETA</strong></h4>
-							Escoje el tama&ntilde;o de tu hamburguesa y si la prefieres en combo</aside>
-						<figure>
-							<img src="images/productos/mega_queso_tocineta.png"/>
-						</figure>
-						<fieldset class="estilo">
-							<div class="middle"><label>SUPER<br/><mark>$12.000</mark></label><br/><input type="radio" name="estilo" value="super" checked/></div>
-							<div class="middle"><label>MEGA <br/><mark>$16.000</mark></label><br/><input type="radio" name="estilo" value="mega"/></div>
-							<div class="complete"><label>COMBO<br/> <strong>Papa super + gaseosa 10 Oz +</strong><br/><mark>$5.400</mark></label><input type="checkbox" name="combo" value="combo"/></div><br/>
-							<a href="#" class="botones mostrarCarrito">Agregar Producto</a>
-						</fieldset>
-						
+					<section class="colum agregar_prod">
+						<!-- CONTENT BLOCK -->
+						<article>
+							<header>
+								<h2>PERSONALIZAR</h2>
+								<div class="pedidopara">ESTE PRODUCTO ES PARA:<INPUT type="text" Placeholder="Nombre de la persona"></div>
+							</header>
+							<div class='tabs tabs_default'>
+								<ul class='horizontal'>
+									<li><a href="#tab-1">HAMBURGUESA</a></li>
+									<li><a href="#tab-2">BEBIDA</a></li>
+									<li><a href="#tab-3">ACOMPA&Ntilde;ANTE</a></li>
+									<li><a href="#tab-4">POSTRE</a></li>
+								</ul>
+								<div id='tab-1' class="contentabs">
+									<aside class="cols-left col1ter">
+										<h5>SIN COSTO ADICIONAL</h5>
+										<article class="border-right">
+											<INPUT type="checkbox" group="adicionales_costo"><label class="destacar doblespacio">Tomate</label><br/>
+											<INPUT type="checkbox" group="adicionales_costo"><label class="destacar doblespacio">Cebolla</label><br/>
+											<INPUT type="checkbox" group="adicionales_costo"><label class="destacar doblespacio">Lechuga</label><br/>
+											<INPUT type="checkbox" group="adicionales_costo"><label class="destacar doblespacio">Salsa Presto</label><br/>
+											<INPUT type="checkbox" group="adicionales_costo"><label class="doblespacio">Salsa BBQ</label><br/>
+											<INPUT type="checkbox" group="adicionales_costo"><label class="doblespacio">Mayonesa</label><br/>
+											<INPUT type="checkbox" group="adicionales_costo"><label class="doblespacio">Mostaza</label><br/>
+											<INPUT type="checkbox" group="adicionales_costo"><label class="doblespacio">Salsa de tomate</label><br/>
+										</article>
+									</aside>
+									<aside class="cols-right col3ter">
+										<h5>COSTO ADICIONAL</h5>
+										<article class="cols3">
+										<INPUT type="checkbox" group="adicionales_costo"><label>Queso cheddar<br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Queso americano <br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label class="destacar">Tocineta <br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Pepinillos <br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Guacamole<br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Jalape&ntilde;os<br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Fr&iacute;jol refrito <br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Cebolla grille <br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Huevo frito <br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Papa perro <br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Salsa criolla <br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Champi&ntilde;ones<br/>  $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Pi&ntilde;a<br/>$2.500 </label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Anillos cebolla<br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Filete de poll<br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Jam&oacute;n<br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Roastbeef<br/> $2.500</label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Hamburguesa Super<br/>$2.500 </label><br/>
+										<INPUT type="checkbox" group="adicionales_costo"><label>Hamburguesa Mega<br/> $2.500</label><br/>
+										
+										</article>
+										<div class="destacar note">Rojo indica los ingredientes que vienen incluidos en este producto</div>
+									</aside>
+								</div>
+								<div id='tab-2' class="contentabs"><h3>Tab 2</h3></div>
+								<div id='tab-3' class="contentabs"><h3>Tab 3</h3></div>
+								<div id='tab-4' class="contentabs"><h3>Tab 4 </h3></div>
+							</div>
+						</article>
 					</section>
-					<section class="colum cart_detail" style="display: none; opacity: 0;">
+					<section class="colum cart_detail" style="display: block; opacity: 1;">
 						<div class="cartSummary">
-							<article>
+						<article>
 							<header>
 								<input type="number" name="quantity" min="1" max="5" value="1">
     							<aside class="prod_select"> Hamburguesa <br/>Mega QUESO TOCINETA</aside>
@@ -309,19 +350,19 @@ incluida en tu combo<br/>
 								<div><aside class="ingredientes_select">Papa Mega</aside><aside class="valor">$ 5.900</aside><a href="#" class="borrar">borrar</a></div>
 								<div><aside class="ingredientes_select">Pie de manzana</aside><aside class="valor">$ 6.100</aside><a href="#" class="borrar">borrar</a></div>
 							</aside>
-							<aside ><a href="personalizar_hamburguesa.html" class="botones">Personalizar</a><aside class="pedido_para">Pedido Camilo</aside></aside>
+							<aside class="pers_pedido"><a href="personalizar_hamburguesa.html" class="botones">Personalizar</a><aside class="pedido_para">Pedido Camilo</aside></aside>
 						</article>
-						<a href="#observ" class="btngrandes fancybox">Observaciones</a><a href="personalizar_hamburguesa.html" class="btngrandes">Personalizar</a>
+						<a class="btngrandes fancybox " href="#observ">Observaciones</a><a href="" class="btngrandes">Personalizar</a>
 						<section class="totales">
 							Sub Total <mark>$18.500</mark><br/>
 							Recargo domicilio <mark>$ 3.300</mark><br/>
 							Total <mark>$21.800</mark>
 						</section>
-						<a href="" class="botones btnagreg">Agregar otro producto</a><a href="#personalizar" class="btngrandes pedido fancybox">Comprar</a><br/>
+						<a href="" class="botones btnagreg">Agregar otro producto</a><a href="completar_pedido.html" class="btngrandes">Comprar</a><br/>
 					</div>
 						<div class="textcafebold">NUESTROS PRECIOS INCLUYEN IMPUESTOS</div>
 					</section>
-					
+					<br/><br/><br/>
 				</section>
 			</section>
 
@@ -340,7 +381,7 @@ incluida en tu combo<br/>
 			</ul>
 		</nav>
 		<aside role="socialmedia">
-			<div class="fb-like" data-href="http://clientes.hachedesign.com/pedido-presto.css/" data-width="100" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+			<div class="fb-like" data-href="http://clientes.hachedesign.com/presto/" data-width="100" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
 			<a href="#" class="icon-facebook"></a>
 		</aside>
 		</section>
@@ -356,5 +397,11 @@ incluida en tu combo<br/>
 		<script>
 			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
 		</script>
+	<!-- JS -->
+	<script type="text/javascript" src="js/vendor/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/vendor/waypoints-sticky.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.tabslet.min.js"></script>
+	<script src="js/initializers.js"></script>
+	<!-- JS ends -->
 </body>
 </html>

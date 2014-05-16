@@ -23,6 +23,27 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cake:before {
+	content: "\e60c";
+}
+.icon-trash:before {
+	content: "\e60d";
+}
+.icon-location:before {
+	content: "\e60e";
+}
+.icon-cup:before {
+	content: "\e60f";
+}
+.icon-food:before {
+	content: "\e610";
+}
+.icon-shop:before {
+	content: "\e611";
+}
+.icon-truck:before {
+	content: "\e612";
+}
 .icon-home:before {
 	content: "\e600";
 }
@@ -38,14 +59,20 @@
 .icon-credit:before {
 	content: "\e604";
 }
-.icon-location:before {
+.icon-location2:before {
 	content: "\e605";
 }
-.icon-location2:before {
+.icon-location22:before {
 	content: "\e606";
+}
+.icon-user:before {
+	content: "\e613";
 }
 .icon-lock:before {
 	content: "\e607";
+}
+.icon-signup:before {
+	content: "\e614";
 }
 .icon-menu:before {
 	content: "\e60a";
@@ -58,4 +85,10 @@
 }
 .icon-facebook:before {
 	content: "\e608";
+}
+.icon-twitter:before {
+	content: "\e615";
+}
+.icon-store:before {
+	content: "\e616";
 }

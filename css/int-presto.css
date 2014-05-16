@@ -534,50 +534,50 @@ section[role="otrasfiestas"]{
 	.locales{
 		width: 100%;
 	}
-	.locales table,.locales tbody,.locales th,.locales td,.locales tr{
+	.locales table.local table,.locales table.local tbody,.locales table.local th,.locales table.local td,.locales table.local tr{
 		display:block;
 		font-size: 11px;
 	}
-	.locales thead tr{
+	.locales table.local thead tr{
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
-	.locales tr{
+	.locales table.local tr{
 		 border: 1px solid #ccc;
 		 padding: 8px 2px;
 	}
-	.locales td { 
+	.locales table.local td { 
 			/* Behave  like a "row" */
-			border: none;
-			border-bottom: 1px solid #eee; 
+			border: 0;
+			/*border-bottom: 1px solid #eee; */
 			position: relative;
 			padding-left: 40%;
 			font-size: 11px;
-			padding-top: 1%;
-			padding-bottom: 1%;
+			padding-top: 2%;
+			padding-bottom: 2%;
 		}
-	.locales td:before { 
+	.locales table.local td:before { 
 			/* Now like a table header */
 			position: absolute;
 			/* Top/left values mimic padding */
 			/*top: 6px;*/
 			left: 6px;
-			width: 45%; 
+			width: 25%; 
 			padding-right: 10px;
 			white-space: nowrap;
 			font-size: 11px;
 	}
-
-	.locales table.local td:nth-of-type(1):before { content: "Tarjeta"; }
-	.locales table.local td:nth-of-type(2):before { content: "Identificacion"; }
-	.locales table.local td:nth-of-type(3):before { content: "Nombre"; }
-	.locales table.local td:nth-of-type(4):before { content: "Telefono"; }
-	.locales table.local td:nth-of-type(5):before { content: "Email"; }
-	.locales table.local td:nth-of-type(6):before { content: "Direccion"; }
-	.locales table.local td:nth-of-type(7):before { content: "Puntos Disponibles"; }
-	.locales table.local td:nth-of-type(8):before { content: "Funciones"; }
-	
+	.locales table.local td:nth-of-type(1):before { content: " "; }
+	.locales table.local td:nth-of-type(2):before { content: "Tipo Restaurante"; }
+	.locales table.local td:nth-of-type(3):before { content: "Video Juegos"; }
+	.locales table.local td:nth-of-type(4):before { content: "Fiestas Infantiles"; }
+	.locales table.local td:nth-of-type(5):before { content: "Parque Infantil"; }
+	.locales table.local td:nth-of-type(6):before { content: "Parqueadero"; }
+	.locales table.local td:nth-of-type(7):before { content: "Wi - Fi"; }
+	.locales table td{
+		padding: 8px 4px;
+	}
 }
 @media only screen and (min-width: 800px) and (max-width: 1024px)  {
 	.colum_menu{
