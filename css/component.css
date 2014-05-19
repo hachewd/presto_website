@@ -360,7 +360,6 @@ html, body, .pages, .scroller {
 	right: 100%;
 	bottom: 0;
 	width: 1000px;
-	background: #47a3da;
 }
 
 .tabs nav li.tab-current:after {
@@ -535,4 +534,4 @@ html, body, .pages, .scroller {
 	.mediabox p {
 		margin: 0;
 	}
-}s
+}

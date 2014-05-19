@@ -897,7 +897,7 @@ div.pedidopara input{
 		display: inline-block;
 	}
 	.categories{
-		margin-top: 10px;
+		margin-top: 20px;
 	}
 	.show_detail{
    	 min-height: 460px;
@@ -927,6 +927,25 @@ div.pedidopara input{
 	.gracias_pedido{
 		margin-top: 75px;
 		width:100%;
+	}
+	.col1ter{
+		-webkit-column-count:2; /* Chrome, Safari, Opera */
+		-moz-column-count:2; /* Firefox */
+		column-count:2;
+		width: 100%;
+		padding: 0 10px 10px 20px;
+	}
+	.border-right{
+		border-right: 0;
+	}
+	.col3ter{
+		width: 100%;
+		padding: 0 10px 10px 0;
+	}
+	.cols3{
+		-webkit-column-count:2; /* Chrome, Safari, Opera */
+		-moz-column-count:2; /* Firefox */
+		column-count:2;
 	}
 }
 /* iPads (portrait and landscape) ----------- */
