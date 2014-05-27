@@ -79,7 +79,6 @@
 .screen input[type="text"], .screen input[type="password"]{
 	padding: 4px 5px;
 	margin: 5;
-	width: 95%;
 }
 .screen a.link{
 	color:#ff0000;
@@ -430,7 +429,7 @@ section[role="registro"] article.datos_usuario a, section[role="registro"]  arti
 }
 .direccion{
 	display: block;
-	height:20px;
+	font-family: 'Roboto Condensed', sans-serif;
 	overflow: hidden;
 }
 .direccion legend a{
@@ -439,7 +438,7 @@ section[role="registro"] article.datos_usuario a, section[role="registro"]  arti
 .direccion legend a:hover{
 	color: #ff0000;
 }
-.botones{
+.botones{agregar_direc
 	background: #ff0000;
 	border-radius: 5px;
 	color:#fff;
@@ -451,6 +450,9 @@ section[role="registro"] article.datos_usuario a, section[role="registro"]  arti
 	text-align: center;
 	text-decoration: none;
 	transition: all 0.5s;
+}
+.direccion label{
+	padding: 8px 0;
 }
 .btnagreg{
 	font-size: 12px;
