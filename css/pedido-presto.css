@@ -438,7 +438,7 @@ section[role="registro"] article.datos_usuario a, section[role="registro"]  arti
 .direccion legend a:hover{
 	color: #ff0000;
 }
-.botones{agregar_direc
+.botones{
 	background: #ff0000;
 	border-radius: 5px;
 	color:#fff;
