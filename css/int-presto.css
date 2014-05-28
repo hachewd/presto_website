@@ -419,6 +419,7 @@ section[role="otrasfiestas"]{
 	background:#00b3a7 url(../images/fondo_otrasfiestas.png);
 }
 .fiesta{
+	position:relative;
 	width: 100%;
 }
 .fiestas img.content{
@@ -426,7 +427,6 @@ section[role="otrasfiestas"]{
 	width:100%;
 	z-index: 10;
 }
-
 
 .reservar{
 	display: block;
@@ -436,6 +436,13 @@ section[role="otrasfiestas"]{
 .reservar img{
 	width: 100%;
 }
+.fiesta_infantil{
+	border: 0;
+	position: absolute;
+	top: 25px;
+	z-index: 50;
+}
+/**/
 .locales table td{
 	color: #666;
 	font-size: 12px;
@@ -444,6 +451,8 @@ section[role="otrasfiestas"]{
 .locales table tr:nth-of-type(odd) { 
 	background: #eaeaea; 
 }
+
+
 @media only screen and (min-width: 240px) and (max-width: 799px)  {
 	.colum_menu{
 		margin-left:10px;
@@ -804,5 +813,8 @@ section[role="otrasfiestas"]{
 	section[role="fiestas"] .fiestas img[alt="fiesta"], .desktop_reserve{
 		display: block;
 	}
-
+	/*fiestas*/
+	.fiesta_infantil{
+		width: 60%;
+	}
 }
