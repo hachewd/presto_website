@@ -17,6 +17,7 @@
 <script type="text/javascript" src="js/modernizr.custom.10366.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bjqs-1.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.sudoSlider.min.js"></script>
 	<!-- Add fancyBox main JS and CSS files -->
 	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
@@ -37,7 +38,14 @@
 			});
 		});
 	</script>
-
+<script type="text/javascript">
+		$(document).ready(function(){	
+			var sudoSlider = $("#slider").sudoSlider({
+                continuous: true,
+                responsive: true,
+            });
+		});	
+	</script>
 
 </head>
 <body>
@@ -271,14 +279,21 @@
 				<section class="colum_content">
 					<section class="noticias">
 						<h2>Noticias</h2>
-						<section id="noticias-slide">
-				        <!-- start Basic Jquery Slider -->
-				          <div>
-				          	<aside>El rico sabor de Presto llega al parque Santander en Bogotá. Nuestro nuevo local en la Calle 17 con Cra. 7, ubicado al frente del edificio de Avianca, cuenta con un ambiente acogedor que ha encantado a nuestros clientes. Te invitamos para que vengas a disfrutar de nuestros deliciosos productos.</aside>
-				          <figure><img src="images/imagen_nodisponible.jpg" class="news"></figure></div>   
-				        <!-- end Basic jQuery Slider -->
-		    			</section>
+		    			<div id="slider">
+							<ul>				
+								<li style="width:696px;">
+									<p class="article">El rico sabor de Presto llega al parque Santander en Bogot&aacute;. Nuestro nuevo local en la Calle 17 con Cra. 7, ubicado al frente del edificio de Avianca, cuenta con un ambiente acogedor que ha encantado a nuestros clientes. Te invitamos para que vengas a disfrutar de nuestros deliciosos productos.</p>
+									<div class="imagesnew"><img src="images/local_santander.jpg" alt="Make me that sandwich!!!"/></div>
+								</li>	
+								<li style="width:696px;">
+									<p class="article">El rico sabor de Presto llega al parque Santander en Bogot&aacute;. Nuestro nuevo local en la Calle 17 con Cra. 7, ubicado al frente del edificio de Avianca, cuenta con un ambiente acogedor que ha encantado a nuestros clientes. Te invitamos para que vengas a disfrutar de nuestros deliciosos productos.</p>
+									<div class="imagesnew"><img src="images/imagen_nodisponible.jpg" alt="Make me that sandwich!!!"/></div>
+								</li>	
+							</ul>
+						</div>
 					</section>
+
+					<br/><br/>
 				</section>
 			</section>
 

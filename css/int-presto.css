@@ -208,6 +208,46 @@
 	font-weight: normal;
 	padding: 25px 0;
 }
+/*noticias*/
+.noticias{
+	position: relative;
+}
+.article, .imagesnew{
+	display: inline-block;
+	vertical-align: top;
+}
+.article{
+	width: 50%;
+	padding-right:5%; 
+}
+.imagesnew{
+	padding-left:5%; 
+}
+.imagesnew img{
+	width: 100%;
+}
+
+.prevBtn, .nextBtn {
+	margin:0;
+	padding:0;
+	display:block;
+	overflow:hidden;
+	text-indent:-8000px;
+	width:30px;
+	height:60px;
+	position:absolute;
+	top:45%;
+	z-index:1000;
+}	
+.prevBtn{
+	background:#1b100a url(../images/arrows.png) no-repeat -27px 10px;
+	left:-50px;
+}														
+.nextBtn {
+	right:-50px;
+	background:#1b100a url(../images/arrows.png) no-repeat 0px 10px; 
+}	
+
 
 /*encuentranos*/
 section[role="encuentranos"] .mapa{
@@ -586,9 +626,24 @@ section[role="otrasfiestas"]{
 	.locales table td{
 		padding: 8px 4px;
 	}
+	/*noticias*/
+	.noticias{
+		margin: 0 auto;
+		width: 80%;
+	}
+	.article{		
+ 		margin: 0 auto;
+		width: 95%;
+	}
+	.imagesnew{
+		display: block;
+		margin: 0 auto;
+		width:50%;
+	}
 }
 @media only screen and (min-width: 800px) and (max-width: 1024px)  {
 	.colum_menu{
+		margin-top: 15px;
 		margin-left:25px;
 		margin-right: 30px;
 	}
@@ -596,6 +651,7 @@ section[role="otrasfiestas"]{
 		padding-top: 30px;
 	}
 	.colum_content{
+		margin-top: 15px;
 		width:75%;
 	}
 	.colum_content figure.left{
@@ -654,6 +710,19 @@ section[role="otrasfiestas"]{
 	section[role="fiestas"] .fiestas img[alt="fiesta"], .desktop_reserve{
 		display: block;
 	}
+	/*noticias*/
+	.noticias{
+		margin: 0 auto;
+		width: 90%;
+	}
+	.article{		
+		padding-right:5%; 
+		width: 40%;
+	}
+	.imagesnew{
+		padding-left:5%; 
+		width:40%;
+	}
 
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -665,7 +734,7 @@ section[role="otrasfiestas"]{
 		padding-top: 50px;
 	}
 	.colum_content{
-		width:81%;
+		width:75%;
 	}
 	.colum_content figure.left{
 		margin: 20px 10px;
@@ -728,6 +797,19 @@ section[role="otrasfiestas"]{
 	}
 	section[role="fiestas"] .fiestas img[alt="fiesta"], .desktop_reserve{
 		display: block;
+	}
+	/*noticias*/
+	.noticias{
+		margin: 0 auto;
+		width: 90%;
+	}
+	.article{		
+		padding-right:5%; 
+		width: 45%;
+	}
+	.imagesnew{
+		padding-left:5%; 
+		width:40%;
 	}
 }
 @media only screen and (min-width: 1281px) {
@@ -816,5 +898,18 @@ section[role="otrasfiestas"]{
 	/*fiestas*/
 	.fiesta_infantil{
 		width: 60%;
+	}
+	/*noticias*/
+	.noticias{
+		margin: 0 auto;
+		width: 90%;
+	}
+	.article{		
+		padding-right:5%; 
+		width: 40%;
+	}
+	.imagesnew{
+		padding-left:5%; 
+		width:40%;
 	}
 }
