@@ -467,7 +467,9 @@ section[role="otrasfiestas"]{
 	width:100%;
 	z-index: 10;
 }
-
+.movil_reserve{
+	position: relative;
+}
 .reservar{
 	display: block;
 	position: absolute;
@@ -479,8 +481,14 @@ section[role="otrasfiestas"]{
 .fiesta_infantil{
 	border: 0;
 	position: absolute;
-	top: 25px;
-	z-index: 50;
+	z-index: 4;
+}
+.fondo{
+	position: absolute;
+	z-index: 1;
+}
+.titFiestas img, .subtitFiestas img{
+	width:100%;
 }
 /**/
 .locales table td{
@@ -639,6 +647,18 @@ section[role="otrasfiestas"]{
 		display: block;
 		margin: 0 auto;
 		width:50%;
+	}
+
+	/*fiestas*/
+	.fiestas{
+		height:500px;
+	}
+	.titFiestas, .subtitFiestas{
+		width:50%;
+	}
+	.fiesta_infantil{
+		margin:25px auto;
+		width:80%;
 	}
 }
 @media only screen and (min-width: 800px) and (max-width: 1024px)  {
