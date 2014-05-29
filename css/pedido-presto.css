@@ -108,6 +108,10 @@
 	margin: 15px 0 10px 0;
 	padding: 8px 20px;
 }
+/*login window*/
+.login a{
+	color:#ff0000;
+}
 .login input[type="submit"]:hover{
 	background: #666;
 }
