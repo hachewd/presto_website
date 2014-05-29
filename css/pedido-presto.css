@@ -112,11 +112,20 @@
 .login a{
 	color:#ff0000;
 }
+.login input[type="password"]{
+	margin-top:5px;
+}
+.login a.submit{
+	padding:4px 5px;
+	text-decoration: none;
+	width: 65%;
+}
 .login input[type="submit"]:hover{
 	background: #666;
 }
 .destacar{
 	color: #ff0000;
+	text-decoration: none;
 }
 .personalizar{
 	width: 55%;
