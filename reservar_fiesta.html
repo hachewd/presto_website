@@ -261,21 +261,26 @@
 						<aside class="subtitFiestas"><img src="images/fiesta_subtitle_reserva.png" alt="subtituloreservar" class="content"></aside>
 					</div>
 					<fieldset class="fiesta_infantil">
-							<label for="nombre">Nombre</label>
+							<label for="nombre"><span>*</span>Nombre</label>
 							<input type="text" id="nombre">
-							<label for="apellido">Apellido</label>
+							<label for="apellido"><span>*</span>Apellido</label>
 							<input type="text" id="apellido">
-							<label for="correo">Correo</label>
+							<label for="correo"><span>*</span>Correo</label>
 							<input type="text" id="correo">
-							<label for="telefono">Tel&eacute;fono</label>
+							<label for="telefono"><span>*</span>Tel&eacute;fono</label>
 							<input type="text" id="telefono">
-							<label for="direccion">Direcci&aacute;n</label>
+							<label for="direccion"><span>*</span>Direcci&oacute;n</label>
 							<input type="text" id="direccion">
-							<label for="comentario">Comentario</label>
+							<label for="direccion"><span>*</span>Ciudad</label>
+							<select name="ciudad" id="ciudad">
+								<option value="1">ciudad 1</option>
+								<option value="2">ciudad 2</option>
+								<option value="3">ciudad 3</option>
+							</select>
+							<label for="comentario"><span>*</span>Comentario</label>
 							<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-							<input type="submit">
+							<input type="submit" value="enviar"  class="enviarfiesta">
 					</fieldset>
-					<a href="reservar_fiesta.html" class="reservar"><img src="images/reservar_aqui.png" alt=""></a>
 				</section>
 				<br/><br/>
 			</section>

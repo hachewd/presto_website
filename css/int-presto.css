@@ -458,11 +458,11 @@ section[role="fiestas"]{
 section[role="otrasfiestas"]{
 	background:#00b3a7 url(../images/fondo_otrasfiestas.png);
 }
-.fiesta{
+.fiestasform{
 	position:relative;
 	width: 100%;
 }
-.fiestas img.content{
+.fiestasform img.content{
 	position: relative;
 	width:100%;
 	z-index: 10;
@@ -480,8 +480,34 @@ section[role="otrasfiestas"]{
 }
 .fiesta_infantil{
 	border: 0;
-	position: absolute;
-	z-index: 4;
+	position: relative;
+	z-index: 20;
+}
+.fiesta_infantil label{
+	display: inline-block;
+}
+input[type="submit"].enviarfiesta{
+	border:0;
+	background: transparent url(../images/btn_enviarfiestas.png) no-repeat;
+	cursor: pointer;
+	height: 70px;
+	text-indent: 250px;
+	overflow: hidden;
+	width:150px;
+}
+.fiesta_infantil input[type="text"], .fiesta_infantil textarea, .fiesta_infantil select{
+	background: #fff;
+	border: 1px solid #999;
+	display: block;
+	margin: 5px 0;
+	padding: 5px;
+	width:60%;
+}
+.fiesta_infantil{
+	color: #534741;
+	font-family: 'Roboto Regular', sans-serif;
+	font-size: 16px;
+	letter-spacing: 0px;
 }
 .fondo{
 	position: absolute;
@@ -489,6 +515,9 @@ section[role="otrasfiestas"]{
 }
 .titFiestas img, .subtitFiestas img{
 	width:100%;
+}
+.fiesta_infantil label span{
+	color:#ff0000;
 }
 /**/
 .locales table td{
@@ -581,10 +610,10 @@ section[role="otrasfiestas"]{
 		right: 10px;
 		width: 120px;
 	}
-	section[role="fiestas"] .fiestas img[alt="kanguro"], .movil_reserve{
+	section[role="fiestas"] .fiestasform img[alt="kanguro"], .movil_reserve{
 		display: block;
 	}
-	section[role="fiestas"] .fiestas img[alt="fiesta"], .desktop_reserve{
+	section[role="fiestas"] .fiestasform img[alt="fiesta"], .desktop_reserve{
 		display: none;
 	}
 	.locales{
@@ -648,18 +677,31 @@ section[role="otrasfiestas"]{
 		margin: 0 auto;
 		width:50%;
 	}
-
 	/*fiestas*/
-	.fiestas{
-		height:500px;
+	.fiestasform{
+		height:870px;
 	}
 	.titFiestas, .subtitFiestas{
-		width:50%;
+		margin:0 0 0 25%;
+		padding-top:15px;
+		width:40%;
 	}
 	.fiesta_infantil{
-		margin:25px auto;
-		width:80%;
+		color: #534741;
+		display: block;
+		font-size: 16px;
+		letter-spacing: 1px;
+		margin:25px 25px 15px 25%;
+		width:70%;
 	}
+	.fiesta_infantil label{
+		width:30%;
+	}
+	input[type="submit"].enviarfiesta{
+		display: block;
+		margin: 0 auto;
+	}
+	
 }
 @media only screen and (min-width: 800px) and (max-width: 1024px)  {
 	.colum_menu{
@@ -724,10 +766,10 @@ section[role="otrasfiestas"]{
 		right: 80px;
 		width: 150px;
 	}
-	section[role="fiestas"] .fiestas img[alt="kanguro"], .movil_reserve{
+	section[role="fiestas"] .fiestasform img[alt="kanguro"], .movil_reserve{
 		display: none;
 	}
-	section[role="fiestas"] .fiestas img[alt="fiesta"], .desktop_reserve{
+	section[role="fiestas"] .fiestasform img[alt="fiesta"], .desktop_reserve{
 		display: block;
 	}
 	/*noticias*/
@@ -743,7 +785,43 @@ section[role="otrasfiestas"]{
 		padding-left:5%; 
 		width:40%;
 	}
-
+	/*fiestas*/
+	.fiestasform{
+		min-height:650px;
+	}
+	
+	.fiesta_infantil{
+		color: #534741;
+		display: block;
+		font-family: 'Roboto Regular', sans-serif;
+		font-size: 16px;
+		letter-spacing: 1px;
+		margin:25px 25px 15px 25%;
+		width:55%;
+		-webkit-column-count:2; /* Chrome, Safari, Opera */
+		-moz-column-count:2; /* Firefox */
+		column-count:2;
+	}
+	.titFiestas, .subtitFiestas{
+		margin:0 auto;
+		padding-top:15px;
+		width:35%;
+	}
+	.fiesta_infantil label{
+		font-size: 13px;
+	}
+	.fiesta_infantil input[type="text"], .fiesta_infantil textarea, .fiesta_infantil select{
+		font-size: 13px;
+		margin: 2px 0;
+		padding: 2px;
+		width:200px;
+	}
+	.fiesta_infantil textarea{
+		height: 80px;
+	}
+	input[type="submit"].enviarfiesta{
+		margin: 0 0 0 80px;
+	}
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	.colum_menu{
@@ -812,10 +890,10 @@ section[role="otrasfiestas"]{
 		padding: 10px 40px;
 		width: 88%;
 	}
-	section[role="fiestas"] .fiestas img[alt="kanguro"], .movil_reserve{
+	section[role="fiestas"] .fiestasform img[alt="kanguro"], .movil_reserve{
 		display: none;
 	}
-	section[role="fiestas"] .fiestas img[alt="fiesta"], .desktop_reserve{
+	section[role="fiestas"] .fiestasform img[alt="fiesta"], .desktop_reserve{
 		display: block;
 	}
 	/*noticias*/
@@ -830,6 +908,32 @@ section[role="otrasfiestas"]{
 	.imagesnew{
 		padding-left:5%; 
 		width:40%;
+	}
+	.fiesta_infantil{
+		border: 0;
+		left: calc(60% /3 );
+		position: absolute;
+		padding-top:22%;
+		top: 25px;
+		width: 45%;
+		-webkit-column-count:2; /* Chrome, Safari, Opera */
+		-moz-column-count:2; /* Firefox */
+		column-count:2;
+		z-index: 10;
+	}
+	.fiesta_infantil label{
+		font-size: 13px;
+	}
+	.fiesta_infantil input[type="text"], .fiesta_infantil textarea, .fiesta_infantil select{
+		font-size: 13px;
+		padding: 2px;
+		width:200px;
+	}
+	.fiesta_infantil textarea{
+		height: 100px;
+	}
+	input[type="submit"].enviarfiesta{
+		margin: 0 0 0 35%;
 	}
 }
 @media only screen and (min-width: 1281px) {
@@ -909,16 +1013,13 @@ section[role="otrasfiestas"]{
 		padding: 10px 40px;
 		width: 88%;
 	}
-	section[role="fiestas"] .fiestas img[alt="kanguro"], .movil_reserve{
+	section[role="fiestas"] .fiestasform img[alt="kanguro"], .movil_reserve{
 		display: none;
 	}
-	section[role="fiestas"] .fiestas img[alt="fiesta"], .desktop_reserve{
+	section[role="fiestas"] .fiestasform img[alt="fiesta"], .desktop_reserve{
 		display: block;
 	}
-	/*fiestas*/
-	.fiesta_infantil{
-		width: 60%;
-	}
+	
 	/*noticias*/
 	.noticias{
 		margin: 0 auto;
@@ -932,4 +1033,33 @@ section[role="otrasfiestas"]{
 		padding-left:5%; 
 		width:40%;
 	}
+	/*fiestas**/
+	.fiesta_infantil{
+		border: 0;
+		left: calc(57% /3);
+		position: absolute;
+		padding-top:25%;
+		top: 0;
+		width: 50%;
+		-webkit-column-count:2; /* Chrome, Safari, Opera */
+		-moz-column-count:2; /* Firefox */
+		column-count:2;
+		z-index: 10;
+	}
+	.fiesta_infantil label{
+		font-size: 16px;
+	}
+	.fiesta_infantil input[type="text"], .fiesta_infantil textarea, .fiesta_infantil select{
+		font-size: 16px;
+		padding: 2px;
+		width:210px;
+	}
+	.fiesta_infantil textarea{
+		width:300px;
+		height: 100px;
+	}
+	input[type="submit"].enviarfiesta{
+		margin:10px 0 0 150px;
+	}
+
 }
